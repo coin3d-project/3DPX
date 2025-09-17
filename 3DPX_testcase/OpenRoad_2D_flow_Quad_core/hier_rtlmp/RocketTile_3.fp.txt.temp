@@ -1,0 +1,15 @@
+(RocketTile_3)_glue_logic||RocketTile_3/dcache_amoalus_0   0   0   592.801   1739.04
+RocketTile_3/fpuOpt/dfma_fma   0   1739.04   91.9183   105.187
+RocketTile_3/fpuOpt/fpiu||RocketTile_3/fpuOpt/ifpu   307.57   1739.04   285.231   105.187
+(RocketTile_3/fpuOpt)_glue_logic||RocketTile_3/fpuOpt/fpmu||RocketTile_3/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_3/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   91.9183   1739.04   215.652   105.187
+NONE   -490.391   -21   2308.02   3442.04
+RocketTile_0   1195.2   453.639   0   0
+RocketTile_1   -235.125   1170.43   0   0
+RocketTile_2   64.8631   2870.73   0   0
+bank||coh_wrapper_l2_ctrls||coh_wrapper_l2_inclusive_cache_bank_sched||uartClockDomainWrapper_uart_0_rxm   1198.78   2153.94   0   0
+cbus_wrapped_error_device_error   0.000396729   1844.23   0   0
+serial_tl_domain_phy_in_phits_in_async_4_sink   -470.25   2325.45   0   0
+serial_tl_domain_phy_in_phits_in_async_4_source   -470.25   2325.45   0   0
+serial_tl_domain_phy_out_phits_out_async_1_sink   0.000396729   1844.23   0   0
+serial_tl_domain_phy_out_phits_out_async_1_source   0.000396729   1844.23   0   0
+(root)_glue_logic   299.988   2092.54   0   0

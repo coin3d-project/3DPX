@@ -1,0 +1,1107 @@
+OpenROAD v2.0-21011-gbb2a3e831 
+Features included (+) or not (-): +GPU +GUI +Python : Debug
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 12 thread(s).
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_tech.lef, created 31 layers, 48 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_bottom_tier already seen in nangate_tech
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef, created 135 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_top_tier already seen in nangate_tech
+[INFO ODB-0394] Duplicate site IO in nangate_stdcell_top_tier already seen in nangate_stdcell_bottom_tier
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier.lef, created 135 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_top_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_top_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_top_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_top_tier.lef, created 1 library cells
+[INFO ODB-0128] Design: DigitalTop
+[INFO ODB-0094] 		Created 100000 Insts
+[INFO ODB-0094] 		Created 200000 Insts
+[INFO ODB-0094] 		Created 300000 Insts
+[INFO ODB-0094] 		Created 400000 Insts
+[INFO ODB-0097] 		Created 100000 Nets
+[INFO ODB-0097] 		Created 200000 Nets
+[INFO ODB-0097] 		Created 300000 Nets
+[INFO ODB-0097] 		Created 400000 Nets
+[INFO ODB-0097] 		Created 500000 Nets
+[INFO ODB-0130]     Created 409 pins.
+[INFO ODB-0131]     Created 431890 components and 2734870 component-terminals.
+[INFO ODB-0133]     Created 533041 nets and 1870834 connections.
+[WARNING STA-0347] current_design for other than top cell not supported.
+[WARNING STA-0366] port 'auto_tap_clock_in_clock' not found.
+[WARNING STA-0366] port 'auto_tap_clock_in_clock' not found.
+[WARNING STA-0366] port 'auto_intsink_in_sync_0' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_reset_vector_in[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_hartid_in' not found.
+[WARNING STA-0366] port 'auto_int_in_clock_xing_in_2_sync_0' not found.
+[WARNING STA-0366] port 'auto_int_in_clock_xing_in_1_sync_0' not found.
+[WARNING STA-0366] port 'auto_int_in_clock_xing_in_0_sync_0' not found.
+[WARNING STA-0366] port 'auto_int_in_clock_xing_in_0_sync_1' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_ready' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_valid' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_opcode[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_opcode[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_opcode[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_param[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_param[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_size[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_size[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_size[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_size[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_source[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_source[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[31]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[30]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[29]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[28]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[27]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[26]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[25]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[24]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[23]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[22]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[21]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[20]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[19]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[18]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[17]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[16]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[15]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[14]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[13]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[12]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[11]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[10]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[9]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[8]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[7]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[6]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[5]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[4]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_address[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_mask[7]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_mask[6]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_mask[5]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_mask[4]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_mask[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_mask[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_mask[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_mask[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[63]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[62]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[61]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[60]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[59]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[58]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[57]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[56]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[55]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[54]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[53]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[52]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[51]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[50]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[49]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[48]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[47]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[46]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[45]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[44]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[43]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[42]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[41]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[40]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[39]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[38]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[37]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[36]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[35]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[34]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[33]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[32]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[31]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[30]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[29]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[28]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[27]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[26]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[25]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[24]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[23]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[22]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[21]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[20]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[19]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[18]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[17]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[16]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[15]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[14]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[13]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[12]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[11]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[10]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[9]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[8]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[7]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[6]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[5]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[4]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_data[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_bits_corrupt' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_ready' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_valid' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_opcode[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_opcode[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_opcode[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_param[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_param[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_size[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_size[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_size[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_size[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_source[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_source[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_sink[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_sink[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_sink[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_denied' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[63]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[62]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[61]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[60]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[59]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[58]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[57]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[56]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[55]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[54]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[53]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[52]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[51]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[50]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[49]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[48]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[47]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[46]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[45]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[44]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[43]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[42]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[41]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[40]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[39]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[38]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[37]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[36]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[35]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[34]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[33]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[32]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[31]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[30]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[29]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[28]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[27]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[26]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[25]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[24]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[23]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[22]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[21]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[20]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[19]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[18]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[17]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[16]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[15]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[14]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[13]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[12]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[11]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[10]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[9]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[8]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[7]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[6]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[5]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[4]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_data[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_bits_corrupt' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_e_ready' not found.
+[WARNING STA-0366] port 'auto_tap_clock_in_reset' not found.
+[WARNING STA-0366] port 'auto_intsink_out_2_0' not found.
+[WARNING STA-0366] port 'auto_intsink_out_1_0' not found.
+[WARNING STA-0366] port 'auto_intsink_out_0_0' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iretire' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_iaddr[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_itype[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_itype[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_itype[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_itype[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_group_0_ilastsize' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_priv[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_priv[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_priv[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_priv[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_tval[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_cause[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_core_source_out_time[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_valid' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[39]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[38]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[37]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[36]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[35]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[34]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[33]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[32]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_iaddr[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_insn[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_priv[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_priv[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_priv[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_exception' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_interrupt' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[63]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[62]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[61]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[60]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[59]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[58]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[57]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[56]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[55]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[54]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[53]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[52]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[51]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[50]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[49]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[48]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[47]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[46]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[45]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[44]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[43]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[42]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[41]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[40]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[39]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[38]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[37]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[36]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[35]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[34]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[33]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[32]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_cause[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[39]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[38]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[37]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[36]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[35]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[34]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[33]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[32]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_insns_0_tval[0]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[63]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[62]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[61]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[60]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[59]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[58]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[57]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[56]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[55]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[54]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[53]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[52]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[51]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[50]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[49]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[48]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[47]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[46]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[45]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[44]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[43]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[42]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[41]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[40]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[39]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[38]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[37]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[36]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[35]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[34]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[33]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[32]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[31]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[30]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[29]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[28]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[27]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[26]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[25]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[24]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[23]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[22]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[21]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[20]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[19]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[18]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[17]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[16]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[15]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[14]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[13]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[12]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[11]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[10]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[9]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[8]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[7]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[6]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[5]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[4]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[3]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[2]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[1]' not found.
+[WARNING STA-0366] port 'auto_element_reset_domain_rockettile_trace_source_out_time[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_valid' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_opcode[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_opcode[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_opcode[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_param[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_param[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_param[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_size[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_size[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_size[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_size[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_source[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_source[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[31]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[30]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[29]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[28]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[27]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[26]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[25]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[24]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[23]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[22]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[21]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[20]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[19]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[18]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[17]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[16]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[15]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[14]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[13]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[12]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[11]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[10]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[9]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[8]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[7]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[6]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[5]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[4]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_address[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_mask[7]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_mask[6]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_mask[5]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_mask[4]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_mask[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_mask[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_mask[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_mask[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[63]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[62]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[61]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[60]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[59]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[58]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[57]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[56]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[55]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[54]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[53]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[52]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[51]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[50]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[49]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[48]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[47]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[46]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[45]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[44]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[43]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[42]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[41]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[40]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[39]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[38]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[37]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[36]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[35]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[34]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[33]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[32]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[31]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[30]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[29]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[28]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[27]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[26]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[25]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[24]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[23]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[22]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[21]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[20]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[19]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[18]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[17]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[16]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[15]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[14]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[13]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[12]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[11]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[10]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[9]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[8]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[7]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[6]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[5]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[4]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_data[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_a_bits_corrupt' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_b_ready' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_valid' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_opcode[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_opcode[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_opcode[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_param[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_param[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_param[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_size[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_size[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_size[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_size[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_source[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_source[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[31]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[30]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[29]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[28]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[27]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[26]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[25]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[24]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[23]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[22]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[21]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[20]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[19]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[18]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[17]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[16]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[15]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[14]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[13]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[12]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[11]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[10]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[9]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[8]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[7]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[6]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[5]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[4]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_address[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[63]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[62]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[61]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[60]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[59]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[58]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[57]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[56]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[55]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[54]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[53]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[52]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[51]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[50]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[49]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[48]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[47]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[46]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[45]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[44]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[43]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[42]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[41]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[40]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[39]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[38]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[37]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[36]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[35]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[34]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[33]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[32]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[31]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[30]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[29]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[28]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[27]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[26]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[25]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[24]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[23]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[22]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[21]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[20]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[19]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[18]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[17]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[16]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[15]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[14]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[13]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[12]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[11]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[10]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[9]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[8]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[7]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[6]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[5]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[4]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[3]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_data[0]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_c_bits_corrupt' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_d_ready' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_e_valid' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_e_bits_sink[2]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_e_bits_sink[1]' not found.
+[WARNING STA-0366] port 'auto_tl_master_clock_xing_out_e_bits_sink[0]' not found.
+[WARNING STA-0366] port 'clock' not found.
+[WARNING STA-0366] port 'reset' not found.
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_0 placed. Bounding box (194.065um, 942.900um), (246.315um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_1 placed. Bounding box (21.555um, 942.900um), (73.805um, 1250.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_10 placed. Bounding box (466.785um, 605.760um), (519.035um, 913.760um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_11 placed. Bounding box (73.665um, 942.900um), (125.915um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_12 placed. Bounding box (141.675um, 942.900um), (193.925um, 1250.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_13 placed. Bounding box (264.625um, 942.900um), (316.875um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_14 placed. Bounding box (571.225um, 605.760um), (623.475um, 913.760um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_15 placed. Bounding box (316.985um, 942.900um), (369.235um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_2 placed. Bounding box (623.585um, 605.760um), (675.835um, 913.760um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_3 placed. Bounding box (21.555um, 21.700um), (73.805um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_4 placed. Bounding box (21.555um, 581.700um), (73.805um, 889.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_5 placed. Bounding box (686.865um, 504.970um), (739.115um, 812.970um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_6 placed. Bounding box (519.145um, 605.760um), (571.395um, 913.760um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_7 placed. Bounding box (421.425um, 942.900um), (473.675um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_8 placed. Bounding box (73.635um, 581.700um), (125.885um, 889.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_9 placed. Bounding box (369.065um, 942.900um), (421.315um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_0 placed. Bounding box (21.545um, 413.700um), (47.765um, 455.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_1 placed. Bounding box (21.545um, 497.700um), (47.765um, 539.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_2 placed. Bounding box (21.545um, 539.700um), (47.765um, 581.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_0/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_3 placed. Bounding box (21.545um, 371.700um), (47.765um, 413.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_4 placed. Bounding box (21.545um, 455.700um), (47.765um, 497.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_5 placed. Bounding box (21.545um, 329.700um), (47.765um, 371.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_0 placed. Bounding box (686.865um, 942.900um), (739.115um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_1 placed. Bounding box (162.115um, 21.700um), (214.365um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_2 placed. Bounding box (318.635um, 21.700um), (370.885um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_3 placed. Bounding box (371.025um, 21.700um), (423.275um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_4 placed. Bounding box (634.785um, 942.900um), (687.035um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_5 placed. Bounding box (423.385um, 21.700um), (475.635um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_6 placed. Bounding box (582.425um, 942.900um), (634.675um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_7 placed. Bounding box (632.265um, 21.700um), (684.515um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_0 placed. Bounding box (527.795um, 21.700um), (580.045um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_1 placed. Bounding box (214.195um, 21.700um), (266.445um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_2 placed. Bounding box (579.905um, 21.700um), (632.155um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_3 placed. Bounding box (73.635um, 21.700um), (125.885um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_4 placed. Bounding box (477.985um, 942.900um), (530.235um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_5 placed. Bounding box (475.465um, 21.700um), (527.715um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_6 placed. Bounding box (530.345um, 942.900um), (582.595um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_7 placed. Bounding box (266.555um, 21.700um), (318.805um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_0 placed. Bounding box (135.785um, 105.700um), (162.005um, 147.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_1 placed. Bounding box (135.785um, 63.700um), (162.005um, 105.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_2 placed. Bounding box (135.785um, 21.700um), (162.005um, 63.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_3 placed. Bounding box (135.785um, 147.700um), (162.005um, 189.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_4 placed. Bounding box (135.785um, 189.700um), (162.005um, 231.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_0/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_5 placed. Bounding box (135.785um, 231.700um), (162.005um, 273.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_0 placed. Bounding box (633.665um, 2173.900um), (685.915um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_1 placed. Bounding box (580.465um, 2173.900um), (632.715um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_10 placed. Bounding box (126.025um, 1252.700um), (178.275um, 1560.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_11 placed. Bounding box (528.385um, 2173.900um), (580.635um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_12 placed. Bounding box (544.065um, 1252.700um), (596.315um, 1560.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_13 placed. Bounding box (476.025um, 2173.900um), (528.275um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_14 placed. Bounding box (686.865um, 1560.700um), (739.115um, 1868.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_15 placed. Bounding box (89.345um, 2173.900um), (141.595um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_2 placed. Bounding box (596.425um, 1252.700um), (648.675um, 1560.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_3 placed. Bounding box (686.865um, 2173.900um), (739.115um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_4 placed. Bounding box (686.865um, 1252.700um), (739.115um, 1560.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_5 placed. Bounding box (73.635um, 1560.700um), (125.885um, 1868.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_6 placed. Bounding box (178.105um, 1252.700um), (230.355um, 1560.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_7 placed. Bounding box (423.945um, 2173.900um), (476.195um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_8 placed. Bounding box (73.635um, 1252.700um), (125.885um, 1560.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_9 placed. Bounding box (21.555um, 2173.900um), (73.805um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_0 placed. Bounding box (386.985um, 2439.900um), (413.205um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_1 placed. Bounding box (386.985um, 2397.900um), (413.205um, 2439.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_2 placed. Bounding box (334.585um, 2397.900um), (360.805um, 2439.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_3 placed. Bounding box (360.905um, 2439.900um), (387.125um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_4 placed. Bounding box (360.905um, 2397.900um), (387.125um, 2439.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_5 placed. Bounding box (334.585um, 2439.900um), (360.805um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_0 placed. Bounding box (21.555um, 1252.700um), (73.805um, 1560.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_1 placed. Bounding box (234.105um, 2173.900um), (286.355um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_2 placed. Bounding box (491.985um, 1560.700um), (544.235um, 1868.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_3 placed. Bounding box (282.795um, 1560.700um), (335.045um, 1868.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_4 placed. Bounding box (387.265um, 1560.700um), (439.515um, 1868.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_5 placed. Bounding box (439.625um, 1560.700um), (491.875um, 1868.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_6 placed. Bounding box (335.185um, 1560.700um), (387.435um, 1868.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_7 placed. Bounding box (21.555um, 1560.700um), (73.805um, 1868.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_0 placed. Bounding box (282.825um, 1252.700um), (335.075um, 1560.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_1 placed. Bounding box (181.715um, 2173.900um), (233.965um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_2 placed. Bounding box (491.985um, 1252.700um), (544.235um, 1560.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_3 placed. Bounding box (230.715um, 1560.700um), (282.965um, 1868.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_4 placed. Bounding box (335.185um, 1252.700um), (387.435um, 1560.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_5 placed. Bounding box (387.265um, 1252.700um), (439.515um, 1560.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_6 placed. Bounding box (439.625um, 1252.700um), (491.875um, 1560.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_7 placed. Bounding box (230.715um, 1252.700um), (282.965um, 1560.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_0 placed. Bounding box (21.545um, 2036.700um), (47.765um, 2078.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_1 placed. Bounding box (21.545um, 1952.700um), (47.765um, 1994.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_2 placed. Bounding box (21.545um, 1994.700um), (47.765um, 2036.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_3 placed. Bounding box (21.545um, 1868.700um), (47.765um, 1910.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_4 placed. Bounding box (21.545um, 1910.700um), (47.765um, 1952.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_1/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_5 placed. Bounding box (648.785um, 1252.700um), (675.005um, 1294.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_0 placed. Bounding box (1033.195um, 942.900um), (1085.445um, 1250.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_1 placed. Bounding box (767.195um, 344.940um), (819.445um, 652.940um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_10 placed. Bounding box (1085.305um, 942.900um), (1137.555um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_11 placed. Bounding box (808.355um, 942.900um), (860.605um, 1250.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_12 placed. Bounding box (1190.025um, 942.900um), (1242.275um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_13 placed. Bounding box (1053.945um, 21.700um), (1106.195um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_14 placed. Bounding box (876.395um, 942.900um), (928.645um, 1250.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_15 placed. Bounding box (871.915um, 344.940um), (924.165um, 652.940um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_2 placed. Bounding box (1242.105um, 942.900um), (1294.355um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_3 placed. Bounding box (740.595um, 942.900um), (792.845um, 1250.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_4 placed. Bounding box (928.755um, 942.900um), (981.005um, 1250.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_5 placed. Bounding box (923.995um, 344.940um), (976.245um, 652.940um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_6 placed. Bounding box (1137.665um, 942.900um), (1189.915um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_7 placed. Bounding box (819.555um, 344.940um), (871.805um, 652.940um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_8 placed. Bounding box (980.835um, 942.900um), (1033.085um, 1250.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_9 placed. Bounding box (1346.545um, 942.900um), (1398.795um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_0 placed. Bounding box (740.585um, 386.940um), (766.805um, 428.940um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_1 placed. Bounding box (740.585um, 470.940um), (766.805um, 512.940um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_2 placed. Bounding box (740.585um, 428.940um), (766.805um, 470.940um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_3 placed. Bounding box (740.585um, 554.940um), (766.805um, 596.940um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_4 placed. Bounding box (740.585um, 512.940um), (766.805um, 554.940um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_5 placed. Bounding box (740.585um, 344.940um), (766.805um, 386.940um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_0 placed. Bounding box (1353.825um, 21.700um), (1406.075um, 329.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_1 placed. Bounding box (897.115um, 21.700um), (949.365um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_2 placed. Bounding box (1353.825um, 344.935um), (1406.075um, 652.935um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_3 placed. Bounding box (792.675um, 21.700um), (844.925um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_4 placed. Bounding box (1001.835um, 21.700um), (1054.085um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_5 placed. Bounding box (1405.905um, 344.935um), (1458.155um, 652.935um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_6 placed. Bounding box (1294.465um, 942.900um), (1346.715um, 1250.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_7 placed. Bounding box (1405.905um, 21.700um), (1458.155um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_0 placed. Bounding box (1249.385um, 21.700um), (1301.635um, 329.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_1 placed. Bounding box (949.475um, 21.700um), (1001.725um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_2 placed. Bounding box (1301.465um, 344.935um), (1353.715um, 652.935um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_3 placed. Bounding box (845.065um, 21.700um), (897.315um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_4 placed. Bounding box (1106.305um, 21.700um), (1158.555um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_5 placed. Bounding box (1249.385um, 344.935um), (1301.635um, 652.935um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_6 placed. Bounding box (740.595um, 21.700um), (792.845um, 329.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_7 placed. Bounding box (1301.465um, 21.700um), (1353.715um, 329.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_0 placed. Bounding box (1158.345um, 189.700um), (1184.565um, 231.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_1 placed. Bounding box (1158.345um, 21.700um), (1184.565um, 63.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_2 placed. Bounding box (1158.345um, 63.700um), (1184.565um, 105.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_3 placed. Bounding box (1158.345um, 105.700um), (1184.565um, 147.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_4 placed. Bounding box (1158.345um, 147.700um), (1184.565um, 189.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_2/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_5 placed. Bounding box (1184.705um, 21.700um), (1210.925um, 63.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_0 placed. Bounding box (1064.555um, 1252.700um), (1116.805um, 1560.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_1 placed. Bounding box (1226.145um, 2173.900um), (1278.395um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_10 placed. Bounding box (1012.475um, 1252.700um), (1064.725um, 1560.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_11 placed. Bounding box (1289.425um, 1860.535um), (1341.675um, 2168.535um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_12 placed. Bounding box (740.595um, 1252.700um), (792.845um, 1560.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_13 placed. Bounding box (1405.905um, 1860.535um), (1458.155um, 2168.535um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_14 placed. Bounding box (907.755um, 1252.700um), (960.005um, 1560.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_15 placed. Bounding box (1405.905um, 2173.900um), (1458.155um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_2 placed. Bounding box (792.675um, 1252.700um), (844.925um, 1560.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_3 placed. Bounding box (1341.785um, 1860.535um), (1394.035um, 2168.535um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_4 placed. Bounding box (766.635um, 2173.900um), (818.885um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_5 placed. Bounding box (1330.865um, 2173.900um), (1383.115um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_6 placed. Bounding box (960.115um, 1252.700um), (1012.365um, 1560.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_7 placed. Bounding box (1278.505um, 2173.900um), (1330.755um, 2481.900um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_8 placed. Bounding box (740.595um, 1560.700um), (792.845um, 1868.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_9 placed. Bounding box (1174.035um, 2173.900um), (1226.285um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_0 placed. Bounding box (881.745um, 1378.700um), (907.965um, 1420.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_3/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_1 placed. Bounding box (881.745um, 1420.700um), (907.965um, 1462.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_3/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_2 placed. Bounding box (881.745um, 1336.700um), (907.965um, 1378.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_3/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_3 placed. Bounding box (881.745um, 1294.700um), (907.965um, 1336.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_3/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_4 placed. Bounding box (881.745um, 1252.700um), (907.965um, 1294.700um). Orientation MX
+[INFO MPL-0035] Macro RocketTile_3/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_5 placed. Bounding box (848.385um, 1252.700um), (874.605um, 1294.700um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_0 placed. Bounding box (1017.235um, 1865.900um), (1069.485um, 2173.900um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_1 placed. Bounding box (1121.675um, 2173.900um), (1173.925um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_2 placed. Bounding box (912.795um, 2173.900um), (965.045um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_3 placed. Bounding box (1069.595um, 2173.900um), (1121.845um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_4 placed. Bounding box (1069.595um, 1865.900um), (1121.845um, 2173.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_5 placed. Bounding box (1221.385um, 1252.700um), (1273.635um, 1560.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_6 placed. Bounding box (1017.235um, 2173.900um), (1069.485um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_7 placed. Bounding box (965.155um, 1865.900um), (1017.405um, 2173.900um). Orientation R180
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_0 placed. Bounding box (1116.915um, 1252.700um), (1169.165um, 1560.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_1 placed. Bounding box (860.435um, 1865.900um), (912.685um, 2173.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_2 placed. Bounding box (860.435um, 2173.900um), (912.685um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_3 placed. Bounding box (912.795um, 1865.900um), (965.045um, 2173.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_4 placed. Bounding box (1325.825um, 1252.700um), (1378.075um, 1560.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_5 placed. Bounding box (1273.745um, 1252.700um), (1325.995um, 1560.700um). Orientation R0
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_6 placed. Bounding box (965.155um, 2173.900um), (1017.405um, 2481.900um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_7 placed. Bounding box (1168.995um, 1252.700um), (1221.245um, 1560.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_0 placed. Bounding box (740.585um, 2036.700um), (766.805um, 2078.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_1 placed. Bounding box (740.585um, 1952.700um), (766.805um, 1994.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_2 placed. Bounding box (740.585um, 1910.700um), (766.805um, 1952.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_3 placed. Bounding box (740.585um, 1868.700um), (766.805um, 1910.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_4 placed. Bounding box (740.585um, 1994.700um), (766.805um, 2036.700um). Orientation MY
+[INFO MPL-0035] Macro RocketTile_3/frontend_icache_rockettile_icache_tag_array_rockettile_icache_tag_array_ext_mem_0_5 placed. Bounding box (740.585um, 2078.700um), (766.805um, 2120.700um). Orientation MY
+[INFO MPL-0035] Macro coh_wrapper_l2_inclusive_cache_bank_sched/bankedStore_cc_banks_0_cc_banks_0_ext_mem_0_0 placed. Bounding box (21.025um, 21.000um), (230.025um, 2479.400um). Orientation R0
+[INFO MPL-0035] Macro coh_wrapper_l2_inclusive_cache_bank_sched/bankedStore_cc_banks_2_cc_banks_0_ext_mem_0_0 placed. Bounding box (230.185um, 21.000um), (439.185um, 2479.400um). Orientation R0
+[INFO MPL-0035] Macro coh_wrapper_l2_inclusive_cache_bank_sched/bankedStore_cc_banks_1_cc_banks_0_ext_mem_0_0 placed. Bounding box (1227.265um, 21.000um), (1436.265um, 2479.400um). Orientation R0
+[INFO MPL-0035] Macro coh_wrapper_l2_inclusive_cache_bank_sched/bankedStore_cc_banks_3_cc_banks_0_ext_mem_0_0 placed. Bounding box (1018.105um, 21.000um), (1227.105um, 2479.400um). Orientation R0
+[INFO MPL-0035] Macro coh_wrapper_l2_inclusive_cache_bank_sched/directory_cc_dir_cc_dir_ext_mem_0_0 placed. Bounding box (951.745um, 1080.000um), (1003.995um, 1388.000um). Orientation R0
+[INFO MPL-0035] Macro coh_wrapper_l2_inclusive_cache_bank_sched/directory_cc_dir_cc_dir_ext_mem_0_1 placed. Bounding box (1002.985um, 1080.000um), (1055.235um, 1388.000um). Orientation R0
+[INFO MPL-0035] Macro coh_wrapper_l2_inclusive_cache_bank_sched/directory_cc_dir_cc_dir_ext_mem_0_2 placed. Bounding box (1054.225um, 1080.000um), (1106.475um, 1388.000um). Orientation R0
+[INFO MPL-0035] Macro coh_wrapper_l2_inclusive_cache_bank_sched/directory_cc_dir_cc_dir_ext_mem_0_3 placed. Bounding box (1105.465um, 1080.000um), (1157.715um, 1388.000um). Orientation R0
+[INFO MPL-0035] Macro coh_wrapper_l2_inclusive_cache_bank_sched/directory_cc_dir_cc_dir_ext_mem_0_4 placed. Bounding box (1156.705um, 1080.000um), (1208.955um, 1388.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_0_0 placed. Bounding box (490.305um, 920.000um), (542.555um, 1228.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_1_0 placed. Bounding box (541.545um, 920.000um), (593.795um, 1228.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_2_0 placed. Bounding box (592.785um, 920.000um), (645.035um, 1228.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_3_0 placed. Bounding box (644.025um, 920.000um), (696.275um, 1228.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_4_0 placed. Bounding box (695.265um, 920.000um), (747.515um, 1228.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_5_0 placed. Bounding box (746.505um, 920.000um), (798.755um, 1228.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_6_0 placed. Bounding box (798.025um, 920.000um), (850.275um, 1228.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_7_0 placed. Bounding box (849.265um, 920.000um), (901.515um, 1228.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_0_1 placed. Bounding box (490.305um, 1230.000um), (542.555um, 1538.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_1_1 placed. Bounding box (541.545um, 1230.000um), (593.795um, 1538.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_2_1 placed. Bounding box (592.785um, 1230.000um), (645.035um, 1538.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_3_1 placed. Bounding box (644.025um, 1230.000um), (696.275um, 1538.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_4_1 placed. Bounding box (695.265um, 1230.000um), (747.515um, 1538.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_5_1 placed. Bounding box (746.505um, 1230.000um), (798.755um, 1538.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_6_1 placed. Bounding box (798.025um, 1230.000um), (850.275um, 1538.000um). Orientation R0
+[INFO MPL-0035] Macro bank/ram_mem_mem_ext_mem_7_1 placed. Bounding box (849.265um, 1230.000um), (901.515um, 1538.000um). Orientation R0

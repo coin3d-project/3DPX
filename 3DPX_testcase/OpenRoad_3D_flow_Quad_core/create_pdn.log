@@ -1,0 +1,238 @@
+OpenROAD v2.0-21011-gbb2a3e831 
+Features included (+) or not (-): +GPU +GUI +Python : Debug
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 12 thread(s).
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_tech.lef, created 31 layers, 48 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_bottom_tier already seen in nangate_tech
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef, created 135 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_top_tier already seen in nangate_tech
+[INFO ODB-0394] Duplicate site IO in nangate_stdcell_top_tier already seen in nangate_stdcell_bottom_tier
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier.lef, created 135 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_bottom_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_bottom_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_bottom_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_bottom_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0128] Design: DigitalTop
+[INFO ODB-0094] 		Created 100000 Insts
+[INFO ODB-0094] 		Created 200000 Insts
+[INFO ODB-0094] 		Created 300000 Insts
+[INFO ODB-0094] 		Created 400000 Insts
+[INFO ODB-0097] 		Created 100000 Nets
+[INFO ODB-0097] 		Created 200000 Nets
+[INFO ODB-0097] 		Created 300000 Nets
+[INFO ODB-0097] 		Created 400000 Nets
+[INFO ODB-0097] 		Created 500000 Nets
+[INFO ODB-0130]     Created 409 pins.
+[INFO ODB-0131]     Created 431890 components and 2734870 component-terminals.
+[INFO ODB-0133]     Created 533041 nets and 1870834 connections.
+[WARNING ODB-0386] ROW_0 contains 18 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1 contains 45 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_2 contains 50 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_29 contains 180 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_30 contains 185 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_31 contains 189 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_32 contains 192 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_59 contains 207 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_60 contains 219 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_61 contains 205 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_62 contains 221 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_89 contains 238 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_90 contains 252 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_91 contains 271 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_92 contains 257 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_119 contains 222 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_120 contains 238 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_121 contains 249 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_122 contains 251 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_149 contains 268 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_150 contains 279 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_151 contains 264 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_152 contains 257 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_219 contains 271 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_220 contains 246 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_221 contains 222 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_222 contains 238 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_229 contains 280 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_230 contains 280 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_231 contains 261 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_232 contains 271 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_233 contains 268 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_249 contains 300 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_250 contains 292 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_251 contains 298 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_252 contains 297 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_259 contains 300 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_260 contains 275 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_261 contains 296 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_262 contains 299 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_263 contains 288 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_279 contains 339 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_280 contains 330 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_281 contains 335 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_282 contains 312 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_289 contains 307 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_290 contains 312 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_291 contains 337 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_292 contains 309 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_293 contains 334 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_309 contains 304 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_310 contains 337 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_311 contains 360 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_312 contains 312 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_319 contains 317 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_320 contains 324 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_321 contains 326 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_322 contains 341 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_323 contains 335 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_339 contains 351 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_340 contains 322 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_341 contains 324 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_342 contains 339 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_344 contains 330 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_345 contains 349 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_346 contains 316 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_347 contains 317 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_348 contains 309 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_349 contains 311 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_350 contains 316 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_351 contains 323 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_352 contains 328 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_353 contains 330 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_369 contains 304 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_370 contains 299 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_371 contains 302 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_372 contains 314 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_379 contains 285 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_380 contains 293 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_381 contains 296 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_382 contains 284 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_383 contains 293 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_399 contains 285 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_400 contains 303 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_401 contains 310 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_402 contains 275 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_416 contains 316 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_417 contains 308 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_418 contains 318 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_419 contains 344 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_420 contains 315 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_640 contains 83 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_641 contains 91 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_642 contains 88 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_643 contains 83 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_644 contains 83 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_657 contains 86 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_658 contains 75 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_659 contains 86 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_660 contains 102 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_755 contains 98 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_756 contains 110 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_757 contains 142 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_758 contains 139 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_862 contains 78 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_863 contains 85 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_864 contains 81 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_865 contains 88 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_878 contains 100 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_879 contains 103 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_880 contains 122 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_881 contains 101 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_882 contains 121 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_908 contains 108 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_909 contains 109 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_910 contains 114 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_911 contains 106 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_912 contains 123 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_938 contains 106 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_939 contains 93 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_940 contains 91 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_941 contains 92 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_942 contains 123 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_968 contains 74 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_969 contains 65 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_970 contains 76 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_971 contains 67 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_972 contains 56 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_998 contains 41 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_999 contains 38 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1000 contains 46 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1001 contains 48 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1002 contains 51 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1098 contains 75 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1099 contains 68 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1100 contains 80 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1101 contains 63 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1102 contains 75 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1312 contains 305 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1313 contains 323 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1314 contains 316 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1315 contains 294 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1316 contains 299 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1317 contains 311 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1318 contains 315 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1319 contains 297 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1320 contains 306 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1321 contains 316 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1322 contains 289 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1348 contains 326 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1349 contains 324 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1350 contains 335 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1351 contains 311 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1352 contains 312 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1378 contains 342 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1379 contains 325 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1380 contains 322 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1381 contains 311 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1382 contains 318 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1408 contains 313 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1409 contains 346 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1410 contains 331 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1411 contains 336 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1412 contains 329 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1438 contains 332 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1439 contains 326 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1440 contains 313 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1441 contains 329 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1442 contains 308 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1468 contains 335 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1469 contains 348 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1470 contains 334 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1471 contains 308 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1472 contains 334 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1536 contains 272 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1537 contains 269 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1538 contains 288 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1539 contains 292 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1540 contains 282 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1696 contains 238 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1697 contains 255 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1698 contains 225 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1699 contains 210 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1700 contains 239 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1726 contains 204 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1727 contains 224 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1728 contains 232 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1729 contains 213 placed instances and will not be cut.
+[WARNING ODB-0386] ROW_1730 contains 218 placed instances and will not be cut.
+[INFO ODB-0303] The initial 1763 rows (13414667 sites) were cut with 201 shapes for a total of 1763 rows (13414667 sites).
+[INFO TAP-0004] Inserted 3526 endcaps.
+[INFO TAP-0005] Inserted 7816 tapcells.
+[WARNING ORD-0046] -defer_connection has been deprecated.
+[WARNING ORD-0046] -defer_connection has been deprecated.
+[WARNING ORD-0046] -defer_connection has been deprecated.
+[WARNING ORD-0046] -defer_connection has been deprecated.
+[WARNING ORD-0046] -defer_connection has been deprecated.
+[INFO PDN-0001] Inserting grid: grid

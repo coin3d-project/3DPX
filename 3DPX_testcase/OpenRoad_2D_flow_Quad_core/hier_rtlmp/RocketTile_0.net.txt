@@ -1,0 +1,13 @@
+(RocketTile_0)_glue_logic||RocketTile_0/dcache_amoalus_0   NONE   1.4375
+(RocketTile_0)_glue_logic||RocketTile_0/dcache_amoalus_0   RocketTile_1   25
+(RocketTile_0)_glue_logic||RocketTile_0/dcache_amoalus_0   RocketTile_2   3
+(RocketTile_0)_glue_logic||RocketTile_0/dcache_amoalus_0   RocketTile_3   5.375
+(RocketTile_0)_glue_logic||RocketTile_0/dcache_amoalus_0   bank||coh_wrapper_l2_ctrls||coh_wrapper_l2_inclusive_cache_bank_sched||uartClockDomainWrapper_uart_0_rxm   494.562
+(RocketTile_0)_glue_logic||RocketTile_0/dcache_amoalus_0   cbus_wrapped_error_device_error   5
+(RocketTile_0)_glue_logic||RocketTile_0/dcache_amoalus_0   (root)_glue_logic   2680.5
+RocketTile_0/fpuOpt/fpiu||RocketTile_0/fpuOpt/ifpu   (RocketTile_0)_glue_logic||RocketTile_0/dcache_amoalus_0   656
+(RocketTile_0/fpuOpt)_glue_logic||RocketTile_0/fpuOpt/fpmu||RocketTile_0/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_0/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   NONE   0.6875
+(RocketTile_0/fpuOpt)_glue_logic||RocketTile_0/fpuOpt/fpmu||RocketTile_0/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_0/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   bank||coh_wrapper_l2_ctrls||coh_wrapper_l2_inclusive_cache_bank_sched||uartClockDomainWrapper_uart_0_rxm   8.8125
+(RocketTile_0/fpuOpt)_glue_logic||RocketTile_0/fpuOpt/fpmu||RocketTile_0/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_0/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   (RocketTile_0)_glue_logic||RocketTile_0/dcache_amoalus_0   746.375
+(RocketTile_0/fpuOpt)_glue_logic||RocketTile_0/fpuOpt/fpmu||RocketTile_0/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_0/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   RocketTile_0/fpuOpt/dfma_fma   1774
+(RocketTile_0/fpuOpt)_glue_logic||RocketTile_0/fpuOpt/fpmu||RocketTile_0/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_0/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   RocketTile_0/fpuOpt/fpiu||RocketTile_0/fpuOpt/ifpu   577

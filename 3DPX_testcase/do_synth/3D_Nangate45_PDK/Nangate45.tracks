@@ -1,0 +1,15 @@
+make_tracks metal1_bottom_tier -x_offset 0.095 -x_pitch 0.19 -y_offset 0.07 -y_pitch 0.14
+make_tracks metal2_bottom_tier -x_offset 0.095 -x_pitch 0.19 -y_offset 0.07 -y_pitch  0.14
+make_tracks metal3_bottom_tier -x_offset 0.095 -x_pitch 0.19 -y_offset 0.07 -y_pitch  0.14
+make_tracks metal4_bottom_tier -x_offset 0.095 -x_pitch 0.28 -y_offset 0.07 -y_pitch  0.28
+make_tracks metal5_bottom_tier -x_offset 0.095 -x_pitch 0.28 -y_offset 0.07 -y_pitch  0.28
+make_tracks metal6_bottom_tier -x_offset 0.095 -x_pitch 0.28 -y_offset 0.07 -y_pitch  0.28
+
+make_tracks MIVR -x_offset 0.095 -x_pitch 0.8 -y_offset 0.07 -y_pitch  0.8
+
+make_tracks metal1_top_tier -x_offset 0.095 -x_pitch 0.19 -y_offset 0.07 -y_pitch 0.14
+make_tracks metal2_top_tier -x_offset 0.095 -x_pitch 0.19 -y_offset 0.07 -y_pitch  0.14
+make_tracks metal3_top_tier -x_offset 0.095 -x_pitch 0.19 -y_offset 0.07 -y_pitch  0.14
+make_tracks metal4_top_tier -x_offset 0.095 -x_pitch 0.28 -y_offset 0.07 -y_pitch  0.28
+make_tracks metal5_top_tier -x_offset 0.095 -x_pitch 0.28 -y_offset 0.07 -y_pitch  0.28
+make_tracks metal6_top_tier -x_offset 0.095 -x_pitch 0.28 -y_offset 0.07 -y_pitch  0.28

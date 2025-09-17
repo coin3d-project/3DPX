@@ -1,0 +1,769 @@
+#+TITLE: wk_systems
+#+DESC: Example for the implementation of large IC systems 
+
+** Why I do it
+   To have a set of systems that I can use a cases for PR and EDA.
+
+** Outcomes to achieve
+- [X] Flow to generate RTL from chipyard
+- [X] Flow to generate memories   
+- [X] Flow to do synthesis
+- [ ] Flow to do P&R
+
+  
+* Notes
+
+** Install chipyard
+
+#+begin_src 
+cd ~/WORK/
+git clone https://github.com/ucb-bar/chipyard.git  
+#+end_src
+   
+
+Follow the instructions from documentation or tutorial by Sebastian
+
+
+** Init other tools
+
+Clone repos FakeRAM2.0 and hammer. Useful for generation of fake mems, and scripts for VLSI
+
+#+begin_src sh
+cd ~/WORK/
+git clone https://github.com/The-OpenROAD-Project/FakeRAM2.0.git
+git clone https://github.com/ucb-bar/hammer.git  
+#+end_src
+
+
+** Setup for create my systems in Chipyard
+
+After installation, to work with chipyard do:   
+#+begin_src sh
+conda activate base
+cd ~/WORK/chipyard
+source env.sh  
+#+end_src
+
+
+In the =vlsi= create a link to the hammer description of the nangate45 technology
+#+begin_src 
+cd ~/WORK/chipyard/vlsi/
+mkdir hammer-nangate45-plugin
+cd hammer-nangate45-plugin
+ln -s  ~/WORK/hammer/hammer/technology/nangate45/  .
+#+end_src
+   
+
+** Directory for generating code
+
+Chipyard tools can be use to produce system verilog code to simulate, or code already prepare for synthesis (add memories,
+separate BEH and RTL code) etc. By default, the first simulation is done in =chipyard/sims/xcelium= and the
+physical design on =chipyard/sims/vlsi=
+
+We create a new directory and add a =Makefile=
+#+begin_src sh
+cd ~/WORK/chipyard/
+mkdir do_mysystems_netlist
+cd do_mysystems_netlist
+#+end_src
+
+#+begin_src makefile :tangle do_chipyard/do_mysystems_netlist/Makefile
+base_dir=/home/agids/usr/agarcia/WORK/chipyard/
+sim_dir=$(abspath .)
+
+include $(base_dir)/variables.mk
+
+tech_dir=$(base_dir)/vlsi/hammer-nangate45-plugin/nangate45/
+
+SMEMS_COMP         ?= $(tech_dir)/sram-compiler.json
+#Use a copy of sram-cache to add more
+#SMEMS_CACHE        ?= $(tech_dir)/sram-cache.json
+SMEMS_CACHE        ?= $(base_dir)/do_mysystems_netlist/sram-cache-nangate45.json
+SMEMS_HAMMER       ?= $(build_dir)/$(long_name).mems.hammer.json
+
+#ag: Remove strick for the moment.
+ifdef USE_SRAM_COMPILER
+	TOP_MACROCOMPILER_MODE ?= -l $(SMEMS_COMP) --use-compiler -hir $(SMEMS_HAMMER)
+# --mode strict
+else
+	TOP_MACROCOMPILER_MODE ?= -l $(SMEMS_CACHE) -hir $(SMEMS_HAMMER)
+#--mode strict
+endif
+
+
+sim = $(sim_dir)/$(sim_prefix)-$(MODEL_PACKAGE)-$(CONFIG)
+
+#########################################################################################
+# simulation requirements
+#########################################################################################
+SIM_FILE_REQS += \
+	$(ROCKETCHIP_RSRCS_DIR)/vsrc/TestDriver.v
+
+# copy files but ignore *.h files in *.f since xcelium has -Wcxx include
+$(sim_files): $(SIM_FILE_REQS) $(ALL_MODS_FILELIST) | $(GEN_COLLATERAL_DIR)
+	cp -f $(SIM_FILE_REQS) $(GEN_COLLATERAL_DIR)
+	$(foreach file,\
+		$(SIM_FILE_REQS),\
+		$(if $(filter %.h,$(file)),\
+			,\
+			echo "$(addprefix $(GEN_COLLATERAL_DIR)/, $(notdir $(file)))" >> $@;))
+
+include $(base_dir)/common.mk
+#+end_src
+
+
+The compilation assumes to be a subdir of chipyard, just create a link there to our repo:
+#+begin_src sh
+cd ~/WORK/chipyard/
+ln -s ~/FORGEJO/wk_systems/do_chipyard/do_mysystems_netlist  do_mysystems_netlist 
+#+end_src
+
+Now we can generate systems:
+#+begin_src sh 
+cd ~/FORGEJO/wk_systems/do_chipyard/do_mysystems_netlist
+
+
+# Find the models
+make find-config-fragments | tee find-config-fragments.log
+
+# Create GemminiRocket systems
+# make firrtl CONFIG=chipyard.GemminiRocketConfig   | tee GemminiRocketConfig.log
+make verilog CONFIG=chipyard.GemminiRocketConfig   | tee GemminiRocketConfig.log
+#+end_src
+
+** Create RocketConfig and add files in repo
+
+Create the files for  RocketConfig (only =TilePRCIDomain=)  
+#+begin_src sh
+cd ~/FORGEJO/wk_systems/do_chipyard/do_mysystems_netlist
+make verilog CONFIG=chipyard.RocketConfig  TOP=TilePRCIDomain > chipyard.RocketConfig.log  
+#+end_src
+
+
+Add the files that define the RTL of Rocket to the repo as an example
+#+begin_src sh
+cd /home/agids/usr/agarcia/WORK/chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.RocketConfig/gen-collateral
+xargs -a ../chipyard.harness.TestHarness.chipyard.RocketConfig.top.f  git add
+git add -f chipyard.harness.TestHarness.chipyard.RocketConfig.top.mems.v
+git add -f ../sim_files.f ../sim_files.common.f ../chipyard.harness.TestHarness.chipyard.RocketConfig.mems.conf ../chipyard.harness.TestHarness.chipyard.RocketConfig.model.f ../chipyard.harness.TestHarness.chipyard.RocketConfig.model.mems.conf ../chipyard.harness.TestHarness.chipyard.RocketConfig.top.f ../chipyard.harness.TestHarness.chipyard.RocketConfig.top.mems.conf
+#+end_src
+
+
+
+
+** Generate Gemmini
+
+We run make again, but giving a TOP (e.g  =TilePRCIDomain= or =DigitalTop=).
+#+begin_src sh
+ #make verilog CONFIG=chipyard.GemminiRocketConfig  TOP=DigitalTop > tee GemminiRocketConfig.log
+#make verilog CONFIG=chipyard.LeanGemminiRocketConfig  TOP=DigitalTop > tee LeanGemminiRocketConfig.log
+
+make verilog CONFIG=chipyard.GemminiRocketConfig  TOP=DigitalTop   SMEMS_CACHE=sram-cache-nangate45-gemmini.json > tee GemminiRocketConfig.log
+#+end_src
+
+
+
+List the required memories for =GemminiRocket=
+#+begin_src sh :dir /ssh:cadence:~/FORGEJO/wk_systems/do_chipyard/do_mysystems_netlist/ 
+cat ./generated-src/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig.top.mems.conf 
+#cat ./generated-src/chipyard.harness.TestHarness.chipyard.LeanGemminiRocketConfig/chipyard.harness.TestHarness.chipyard.LeanGemminiRocketConfig.top.mems.conf
+#cat ./generated-src/chipyard.harness.TestHarness.chipyard.AgoGemminiRocketConfig/chipyard.harness.TestHarness.chipyard.AgoGemminiRocketConfig.top.mems.conf  
+#+end_src
+
+#+RESULTS:
+| name | cc_dir_ext                          | depth | 1024 | width | 136 | ports | mrw         | mask_gran | 17 |
+| name | cc_banks_0_ext                      | depth | 8192 | width |  64 | ports | rw          |           |    |
+| name | rockettile_dcache_data_arrays_0_ext | depth |  256 | width | 512 | ports | mrw         | mask_gran |  8 |
+| name | rockettile_dcache_tag_array_ext     | depth |   64 | width | 176 | ports | mrw         | mask_gran | 22 |
+| name | mem_ext                             | depth | 4096 | width | 128 | ports | mrw         | mask_gran |  8 |
+| name | mem_0_ext                           | depth |  512 | width | 512 | ports | mwrite,read | mask_gran |  8 |
+| name | rockettile_icache_tag_array_ext     | depth |   64 | width | 168 | ports | mrw         | mask_gran | 21 |
+| name | rockettile_icache_data_arrays_0_ext | depth |  256 | width | 256 | ports | mrw         | mask_gran | 32 |
+| name | mem_1_ext                           | depth | 8192 | width |  64 | ports | mrw         | mask_gran |  8 |
+
+
+
+#+begin_src python create_sram-cache.py
+template_1rwm = """
+{{
+  "type" : "sram",
+  "name" : "{prefix}_{depth}x{width}",
+  "depth" : "{depth}",
+  "width" : {width},
+  "family" : "1RW",
+  "vt" : "SRAM",
+  "mux" : 1,
+  "ports" : [{{
+    "address port name" : "addr_in",
+    "address port polarity" : "active high",
+    "chip enable port name" : "ce_in",
+    "chip enable port polarity" : "active high",
+    "clock port name" : "clk",
+    "clock port polarity" : "positive edge",
+    "input port name" : "wd_in",
+    "input port polarity" : "active high",
+    "mask granularity" : {mask_granularity},
+    "mask port name" : "w_mask_in",
+    "mask port polarity": "active high",
+    "output port name" : "rd_out",
+    "output port polarity" : "active high",
+    "write enable port name" : "we_in",
+    "write enable port polarity" : "active high"
+  }}],
+  "extra ports" : []
+}}
+"""
+ds = (1024,  8192,  256,  64,  4096,   64,  256,  8192)
+ws = ( 136,    64,  512, 176,   128,  168,  256,    64)
+ms = (   1,    32,    8,   1,     8,    1,   32,     8)
+      
+srams_lst = [template_1rwm.format(prefix="fake45", depth=d, width=w, mask_granularity=m) for  d,w,m in zip(ds, ws, ms)]
+sram_str = '[' + ', '.join(srams_lst) + ']\n'
+
+with open("sram-cache-nangate45-gemmini.json", "w") as f:
+    f.write(sram_str)
+    
+# Print the line for sram.cfg
+template_1rwm_fake = """{{"name": "fakeram45_{depth}x{width}",   "width":  {width},   "depth": {depth},  "banks": 2,  "mask_gran": {mask_granularity}}}"""
+srams_fake_lst = [template_1rwm_fake.format(prefix="fake45", depth=d, width=w, mask_granularity=m) for  d,w,m in zip(ds, ws, ms)]
+print(',\n'.join(srams_fake_lst))
+#+end_src
+
+#+RESULTS:
+
+
+
+We can see which are the mems that have been implemented with IPs, except mem_0_ext:
+#+begin_src sh :dir /ssh:cadence:~/FORGEJO/wk_systems/do_chipyard/do_mysystems_netlist/  :results raw
+egrep "^module|fake"  ./generated-src/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig/gen-collateral/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig.top.mems.v
+#+end_src
+
+#+RESULTS:
+module cc_dir_ext(
+  fake45_1024x136 mem_0_0 (
+module cc_banks_0_ext(
+  fake45_8192x64 mem_0_0 (
+module rockettile_dcache_data_arrays_0_ext(
+  fake45_256x512 mem_0_0 (
+module rockettile_dcache_tag_array_ext(
+  fake45_64x176 mem_0_0 (
+module mem_ext(
+  fake45_4096x128 mem_0_0 (
+module rockettile_icache_tag_array_ext(
+  fake45_64x168 mem_0_0 (
+module rockettile_icache_data_arrays_0_ext(
+  fake45_256x256 mem_0_0 (
+module mem_1_ext(
+  fake45_8192x64 mem_0_0 (
+
+
+The problem is that =mem_0_ext= memory has two ports. And therefore, it cannot be automatically generated with the tape-out tools
+
+#+begin_src verilog
+  mem_0_ext mem_0_ext ( // @[generators/gemmini/src/main/scala/gemmini/SyncMem.scala:45:24]
+    .R0_addr (R0_addr),
+    .R0_en   (R0_en),
+    .R0_clk  (R0_clk),
+    .R0_data (R0_data),
+    .W0_addr (W0_addr),
+    .W0_en   (W0_en),
+    .W0_clk  (W0_clk),
+    .W0_data (W0_data),
+    .W0_mask (W0_mask)
+  );    // @[generators/gemmini/src/main/scala/gemmini/SyncMem.scala:45:24]  
+#+end_src
+
+
+We create some dedicated modules in the directory  =do_synth/IP=
+
+
+Now we can do the synthesis
+#+begin_src tcl :tangle do_synth/cmd/run_GemminiRocket.tcl
+set_db init_hdl_search_path  ./rtl/
+set_db script_search_path  ./cmd/
+set_db source_verbose true
+set_db information_level 9
+# set_db invs_temp_dir genus_invs
+# set_db lp_insert_clock_gating true
+
+
+# Set Lib
+set_db lib_search_path   {/usr/prog/optech/freepdk/fpdk45_v20/NANGATE/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/    /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_1024x32     /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_16384x64     /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_64x32    /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_8192x64  ./IP }
+
+set_db library {NangateOpenCellLibrary_typical_ccs.lib fakeram45_1024x32.lib   fakeram45_64x32.lib  fakeram45_8192x64.lib fakeram45_16384x64.lib   mem_0_dummy.lib   }
+
+# 
+# 
+
+# Set LEF
+# read_physical -lef /usr/prog/optech/freepdk/fpdk45_v20/NANGATE/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef
+# read_physical -lef /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_1024x32/fakeram45_1024x32.lef
+# read_physical -lef /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_64x32/fakeram45_64x32.lef
+
+# read parasitic information from QRC tech file
+# set_db cap_table_file file
+# set_db qrc_tech_file techfile.qrc
+
+
+read_hdl -sv -f ../do_chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig.top.f  ../do_chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig/gen-collateral/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig.model.mems.v
+
+elaborate
+
+read_sdc DualRocket.sdc
+
+auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock
+
+
+report_hiearchy
+check_design
+
+# Synthesis
+syn_generic
+syn_map 
+
+
+# Reports
+report_area
+report_timing
+report_gates
+
+#report clock_gating > reports/compile.clock_gating_$c.rpt
+
+write_hdl > results/DualRocket.v
+write_sdc > results/DualRocket.sdc
+#write_db TilePRCIDomain -all_root_attributes -to_file TilePRCIDomain.tcl
+  
+#+end_src
+
+
+
+
+** Memories with FakeRAM2.0
+The memories that are used are defined in  =chpyard/vlsi/hammer-nangate45-plugin/nangate45/sram-cache.json=
+
+#+begin_src 
+cd /home/agids/usr/agarcia/FORGEJO/wk_systems
+mkdir do_genram
+cd do_genram
+ln -s ~/WORK/FakeRAM2.0/ .
+#+end_src
+
+
+I assume an equivalent contacted_poly_pitch_nm = 170 and fin_pitch_nm
+= 100 to get a typical area of memcell in 45nm of 0.34 um2
+
+20 * (100e-9) * (170e-9) = 0.34e-12
+
+I set: 
+"column_mux_factor" = 2  This changes the form factor (as number of banks)
+
+Adapt the value to match the pitch of metal4 in nangate45
+
+
+#+begin_src text :tangle  do_genram/nangate45_mem.cfg
+#SAMPLE INPUT FILE; VALUES NOT REALISTIC
+{
+  # The process node.
+  "tech_nm": 45,
+
+  # The operating voltage.
+  "voltage": 1.1,
+
+  # String to add in front of every metal layer number for the layer name.
+  "metal_prefix": "metal",
+
+  # Horizontal Metal layer for macro pins
+  "metal_layer": "metal4",
+ 
+  # The pin width for signal pins.
+  "pin_width_nm": 140,
+
+  # The minimum pin pitch for signal pins 
+  "pin_pitch_nm": 280,
+
+  # Metal track pitch  
+  "metal_track_pitch_nm": 280, 
+
+  # Manufacturing Grid 
+  "manufacturing_grid_nm": 5,
+
+  # Contacted Poly Pitch
+  "contacted_poly_pitch_nm": 170,
+
+  #column mux factor
+  "column_mux_factor": 2,
+
+  # Fin pitch
+  "fin_pitch_nm" : 100,
+
+  # Optional snap the width and height of the sram to a multiple value.
+  "snap_width_nm":  190,
+  "snap_height_nm": 1400,
+
+  # List of SRAM configurations (name width depth and banks)
+  "srams": [
+    {"name": "fakeram45_1024x32",   "width":  32,   "depth": 1024,  "banks": 2,  "mask_gran": 1},
+    {"name": "fakeram45_64x32",     "width":  32,   "depth": 64,    "banks": 1,  "mask_gran": 1},
+    {"name": "fakeram45_16384x64",  "width":  64,   "depth": 16384, "banks": 4},
+    {"name": "fakeram45_8192x64",   "width":  64,   "depth": 8192,  "banks": 4,  "mask_gran": 1}
+  ]
+  
+  # TENTATIVE PARAMETERS 
+}
+
+#+end_src
+
+The code for ~/WORK/FakeRAM2.0/ does not considering memories with mask. I have extend it to do that.
+
+TODO: Save the code!
+
+
+** Memories needed in TilePRCIDomain 
+
+| name | rockettile_dcache_data_arrays_0_ext | depth |  256 | width | 512 | ports | mrw         | mask_gran |  8 |
+| name | rockettile_dcache_tag_array_ext     | depth |   64 | width | 176 | ports | mrw         | mask_gran | 22 |
+| name | mem_ext                             | depth | 4096 | width | 128 | ports | mrw         | mask_gran |  8 |
+| name | rockettile_icache_tag_array_ext     | depth |   64 | width | 168 | ports | mrw         | mask_gran | 21 |
+| name | rockettile_icache_data_arrays_0_ext | depth |  256 | width | 256 | ports | mrw         | mask_gran | 32 |
+
+
+** Synthesis script
+Using genus for compatibility with innovus
+
+Setup the technology
+#+begin_src tcl :tangle do_synth/cmd/setup.tcl
+
+set_db init_hdl_search_path  ./rtl/
+set_db script_search_path  ./cmd/
+set_db source_verbose true
+set_db information_level 9
+# set_db invs_temp_dir genus_invs
+# set_db lp_insert_clock_gating true
+
+
+# Set Lib
+set_db lib_search_path   {/usr/prog/optech/freepdk/fpdk45_v20/NANGATE/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/   /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_1024x32/  /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_64x32/}
+set_db library {NangateOpenCellLibrary_typical_ccs.lib fakeram45_1024x32.lib   fakeram45_64x32.lib}
+
+# Set LEF
+# read_physical -lef /usr/prog/optech/freepdk/fpdk45_v20/NANGATE/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef
+# read_physical -lef /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_1024x32/fakeram45_1024x32.lef
+# read_physical -lef /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_64x32/fakeram45_64x32.lef
+
+# read parasitic information from QRC tech file
+# set_db cap_table_file file
+# set_db qrc_tech_file techfile.qrc
+#+end_src
+
+Define the timing constraints
+#+begin_src tcl :tangle do_synth/cmd/def.sdc
+create_clock [get_ports auto_tap_clock_in_clock]  -period  8   -waveform {0 4} -name clk
+
+#set_clock_uncertainty 0.025  -setup [get_clocks clk]
+#set_clock_uncertainty 0.025  -hold [get_clocks clk]
+#set_clock_transition -fall 0.04 [get_clocks clk]
+#set_clock_transition -rise 0.04 [get_clocks clk]
+
+#set_dont_touch clock
+#set_dont_touch reset
+
+#set_clock_latency -max -source 0.1 [get_clocks clk] 
+
+set_input_delay -max -clock clk  0.25 [filter_collection [all_inputs] { !(is_clock) } ]
+set_output_delay -max -clock clk  0.25 [all_outputs]
+
+#+end_src
+
+
+Read the design and constraints:
+#+begin_src tcl :tangle do_synth/cmd/read.tcl
+#read_hdl -sv -f /home/agids/usr/agarcia/WORK/chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig.top.f   /home/agids/usr/agarcia/WORK/chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig/gen-collateral/chipyard.harness.TestHarness.chipyard.GemminiRocketConfig.top.mems.v
+
+read_hdl -sv -f /home/agids/usr/agarcia/WORK/chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.RocketConfig/chipyard.harness.TestHarness.chipyard.RocketConfig.top.f   /home/agids/usr/agarcia/WORK/chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.RocketConfig/gen-collateral/chipyard.harness.TestHarness.chipyard.RocketConfig.top.mems.v
+
+elaborate
+
+read_sdc def.sdc
+
+report_hiearchy
+check_design
+#+end_src
+
+Do the synthesis and save the results:
+#+begin_src  tcl :tangle do_synth/cmd/compile.tcl
+# Synthesis
+syn_generic
+syn_map 
+
+
+# Reports
+report_area
+report_timing
+report_gates
+
+#report clock_gating > reports/compile.clock_gating_$c.rpt
+
+write_hdl > results/TilePRCIDomain.v
+write_sdc > results/TilePRCIDomain.sdc
+#write_db TilePRCIDomain -all_root_attributes -to_file TilePRCIDomain.tcl
+  
+#+end_src
+
+
+** Example: Dual core Rocket
+
+Generate a dual core
+#+begin_src sh
+ make verilog CONFIG=chipyard.DualRocketConfig  TOP=DigitalTop   > DualRocketConfig.log
+#+end_src
+
+
+#+begin_src sh
+egrep instance_name ./do_chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.DualRocketConfig/top_module_hierarchy.json  | sed 's/    /*/g' | egrep -v iocell > DualRocketConfig.hierarchy.org  
+#+end_src
+
+
+#+begin_src sh :dir /ssh:cadence:~/FORGEJO/wk_systems/do_chipyard/do_mysystems_netlist/ 
+cat ./generated-src/chipyard.harness.TestHarness.chipyard.DualRocketConfig/chipyard.harness.TestHarness.chipyard.DualRocketConfig.top.mems.conf
+#+end_src
+
+#+RESULTS:
+| name | cc_dir_ext                          | depth |  1024 | width | 144 | ports | mrw | mask_gran | 18 |
+| name | cc_banks_0_ext                      | depth | 16384 | width |  64 | ports | rw  |           |    |
+| name | rockettile_dcache_data_arrays_0_ext | depth |   512 | width | 512 | ports | mrw | mask_gran |  8 |
+| name | rockettile_dcache_tag_array_ext     | depth |    64 | width | 176 | ports | mrw | mask_gran | 22 |
+| name | rockettile_icache_tag_array_ext     | depth |    64 | width | 168 | ports | mrw | mask_gran | 21 |
+| name | rockettile_icache_data_arrays_0_ext | depth |   512 | width | 256 | ports | mrw | mask_gran | 32 |
+| name | mem_ext                             | depth |  8192 | width |  64 | ports | mrw | mask_gran |  8 |
+
+Add the files that define the RTL of DualRocket to the repo as an example
+#+begin_src sh
+cd /home/agids/usr/agarcia/WORK/chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.DualRocketConfig/gen-collateral
+xargs -a ../chipyard.harness.TestHarness.chipyard.DualRocketConfig.top.f  git add -f
+git add -f chipyard.harness.TestHarness.chipyard.DualRocketConfig.top.mems.v
+git add -f ../sim_files.f ../sim_files.common.f ../chipyard.harness.TestHarness.chipyard.DualRocketConfig.mems.conf ../chipyard.harness.TestHarness.chipyard.DualRocketConfig.model.f ../chipyard.harness.TestHarness.chipyard.DualRocketConfig.model.mems.conf ../chipyard.harness.TestHarness.chipyard.DualRocketConfig.top.f ../chipyard.harness.TestHarness.chipyard.DualRocketConfig.top.mems.conf
+#+end_src
+
+
+
+
+define the timing constraints
+#+begin_src tcl :tangle do_synth/cmd/DualRocket.sdc
+create_clock [get_ports auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock]  -period  8   -waveform {0 4} -name clk
+
+#set_clock_uncertainty 0.025  -setup [get_clocks clk]
+#set_clock_uncertainty 0.025  -hold [get_clocks clk]
+#set_clock_transition -fall 0.04 [get_clocks clk]
+#set_clock_transition -rise 0.04 [get_clocks clk]
+
+#set_dont_touch clock
+#set_dont_touch reset
+
+#set_clock_latency -max -source 0.1 [get_clocks clk] 
+
+set_input_delay -max -clock clk  0.25 [filter_collection [all_inputs] { !(is_clock) } ]
+set_output_delay -max -clock clk  0.25 [all_outputs]
+
+#+end_src
+
+
+Read the design and constraints:
+#+begin_src tcl :tangle do_synth/cmd/run_DualRocket.tcl
+set_db init_hdl_search_path  ./rtl/
+set_db script_search_path  ./cmd/
+set_db source_verbose true
+set_db information_level 9
+# set_db invs_temp_dir genus_invs
+# set_db lp_insert_clock_gating true
+
+
+# Set Lib
+set_db lib_search_path   {/usr/prog/optech/freepdk/fpdk45_v20/NANGATE/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/    /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_1024x32     /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_16384x64     /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_64x32    /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_8192x64 }
+
+set_db library {NangateOpenCellLibrary_typical_ccs.lib fakeram45_1024x32.lib   fakeram45_64x32.lib  fakeram45_8192x64.lib fakeram45_16384x64.lib  mem_0_ext.lib  mem_ext.lib }
+}
+
+# 
+# 
+
+# Set LEF
+# read_physical -lef /usr/prog/optech/freepdk/fpdk45_v20/NANGATE/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef
+# read_physical -lef /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_1024x32/fakeram45_1024x32.lef
+# read_physical -lef /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_64x32/fakeram45_64x32.lef
+
+# read parasitic information from QRC tech file
+# set_db cap_table_file file
+# set_db qrc_tech_file techfile.qrc
+
+
+read_hdl -sv -f ../do_chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.DualRocketConfig/chipyard.harness.TestHarness.chipyard.DualRocketConfig.top.f             ../do_chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.DualRocketConfig/gen-collateral/chipyard.harness.TestHarness.chipyard.DualRocketConfig.top.mems.v
+
+elaborate
+
+read_sdc def.sdc
+
+report_hiearchy
+check_design
+
+# Synthesis
+syn_generic
+syn_map 
+
+
+# Reports
+report_area
+report_timing
+report_gates
+
+#report clock_gating > reports/compile.clock_gating_$c.rpt
+
+write_hdl > results/DualRocket.v
+write_sdc > results/DualRocket.sdc
+#write_db TilePRCIDomain -all_root_attributes -to_file TilePRCIDomain.tcl
+  
+#+end_src
+
+
+Add the netlist 
+#+begin_src sh
+git add   do_synth/results/DualRocket.*
+#+end_src
+
+
+
+
+
+#+RESULTS:
+
+
+
+
+
+** Quad Core
+
+#+begin_src sh
+ make verilog CONFIG=chipyard.QuadRocketConfig  TOP=DigitalTop   > QuadRocketConfig.log
+#+end_src
+
+ 
+Add the files that define the RTL of DualRocket to the repo as an example
+#+begin_src sh
+cd /home/agids/usr/agarcia/WORK/chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.QuadRocketConfig/gen-collateral
+xargs -a ../chipyard.harness.TestHarness.chipyard.QuadRocketConfig.top.f  git add -f
+git add -f chipyard.harness.TestHarness.chipyard.QuadRocketConfig.top.mems.v
+git add -f ../sim_files.f ../sim_files.common.f ../chipyard.harness.TestHarness.chipyard.QuadRocketConfig.mems.conf ../chipyard.harness.TestHarness.chipyard.QuadRocketConfig.model.f ../chipyard.harness.TestHarness.chipyard.QuadRocketConfig.model.mems.conf ../chipyard.harness.TestHarness.chipyard.QuadRocketConfig.top.f ../chipyard.harness.TestHarness.chipyard.QuadRocketConfig.top.mems.conf
+#+end_src
+
+
+Dummy timing constraints: 
+#+begin_src tcl :tangle do_synth/cmd/QuadRocket.sdc
+create_clock [get_ports auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock]  -period  8   -waveform {0 4} -name clk
+
+set_input_delay -max -clock clk  0.25 [filter_collection [all_inputs] { !(is_clock) } ]
+set_output_delay -max -clock clk  0.25 [all_outputs]
+
+#+end_src
+
+
+Scripts for synthesis:
+#+begin_src tcl :tangle do_synth/cmd/run_QuadlRocket.tcl
+set_db init_hdl_search_path  ./rtl/
+set_db script_search_path  ./cmd/
+set_db source_verbose true
+set_db information_level 9
+
+# Set Lib
+set_db lib_search_path   {/usr/prog/optech/freepdk/fpdk45_v20/NANGATE/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/    /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_1024x32     /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_16384x64     /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_64x32    /home/agids/usr/agarcia/FORGEJO/wk_systems/do_genram/results/fakeram45_8192x64 }
+
+set_db library {NangateOpenCellLibrary_typical_ccs.lib fakeram45_1024x32.lib   fakeram45_64x32.lib  fakeram45_8192x64.lib fakeram45_16384x64.lib  }
+
+# Read
+read_hdl -sv -f ../do_chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.QuadRocketConfig/chipyard.harness.TestHarness.chipyard.QuadRocketConfig.top.f             ../do_chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.QuadRocketConfig/gen-collateral/chipyard.harness.TestHarness.chipyard.QuadRocketConfig.top.mems.v
+elaborate
+
+read_sdc QuadRocket.sdc
+
+report_hiearchy
+check_design
+
+# Synthesis
+syn_generic
+syn_map 
+
+
+# Reports
+report_area
+report_timing
+report_gates
+
+#report clock_gating > reports/compile.clock_gating_$c.rpt
+
+write_hdl > results/QuadRocket.v
+write_sdc > results/QuadRocket.sdc
+#write_db TilePRCIDomain -all_root_attributes -to_file TilePRCIDomain.tcl
+  
+#+end_src
+
+
+
+** Add new chipyard configurations 
+
+Add a softlink in chipyard to our configurations so that it is easier to work with them while keeping them in
+the wk_systems repo.
+
+#+begin_src sh
+cd ~/FORGEJO/wk_systems/do_chipyard/
+mkdir configs
+touch AgoConfigs.scala
+cd ~/WORK/chipyard/generators/chipyard/src/main/scala/config/
+ln -s ~/FORGEJO/wk_systems/do_chipyard/configs/AgoConfigs.scala .
+#+end_src
+
+
+We can update the =AgoConfigs.scala= file to include a new set of configurations
+#+begin_src java :tangle do_chipyard/configs/AgoConfigs.scala
+package chipyard
+
+import org.chipsalliance.cde.config.{Config}
+
+import constellation.channel._
+import constellation.routing._
+import constellation.topology._
+import constellation.noc._
+import constellation.soc.{GlobalNoCParams}
+import scala.collection.immutable.ListMap
+
+// Quad Rocket    
+class AgoQuadRocketConfig extends Config(
+  new freechips.rocketchip.rocket.WithNHugeCores(4) ++
+  new chipyard.config.AbstractConfig)    
+
+// // Tutorial Phase 1: Configure the cores, caches
+// class Ago1Config extends Config(
+//   // CUSTOMIZE THE CORE
+//   // Uncomment out one (or multiple) of the lines below, and choose
+//   // how many cores you want.
+//   new freechips.rocketchip.rocket.WithNHugeCores(2) ++    // Specify we want some number of Rocket cores
+//   // new boom.v3.common.WithNSmallBooms(1) ++                     // Specify we want some number of BOOM cores
+
+//   // CUSTOMIZE the L2
+//   // Uncomment this line, and specify a size if you want to have a L2
+//   //new freechips.rocketchip.subsystem.WithInclusiveCache(nBanks=1, nWays=4, capacityKB=128) ++
+//   new freechips.rocketchip.subsystem.WithInclusiveCache(nWays=4, capacityKB=128) ++
+
+//   new chipyard.config.AbstractConfig
+// )
+
+
+
+// class AgoGemminiRocketConfig extends Config(
+//   new gemmini.LeanGemminiConfig ++                                 // use Lean Gemmini systolic array GEMM accelerator
+//   new freechips.rocketchip.rocket.WithNHugeCores(1) ++
+//   //ago: new chipyard.config.WithSystemBusWidth(128) ++
+//   new chipyard.config.AbstractConfig)
+
+  
+#+end_src
+
+
+

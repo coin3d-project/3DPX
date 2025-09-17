@@ -1,0 +1,13 @@
+((root)_glue_logic)_glue_logic_0   289.499   0   310.478   496.622
+((root)_glue_logic)_glue_logic_1   0   0   289.499   496.622
+NONE   -490.391   -1865.23   2308.02   3442.04
+RocketTile_0   1195.2   -1390.59   0   0
+RocketTile_1   -235.125   -673.804   0   0
+RocketTile_2   64.8631   1026.5   0   0
+RocketTile_3   296.4   -922.115   0   0
+bank||coh_wrapper_l2_ctrls||coh_wrapper_l2_inclusive_cache_bank_sched||uartClockDomainWrapper_uart_0_rxm   1198.78   309.709   0   0
+cbus_wrapped_error_device_error   0.000396729   0.0012207   0   0
+serial_tl_domain_phy_in_phits_in_async_4_sink   -470.25   481.216   0   0
+serial_tl_domain_phy_in_phits_in_async_4_source   -470.25   481.216   0   0
+serial_tl_domain_phy_out_phits_out_async_1_sink   0.000396729   0.000366211   0   0
+serial_tl_domain_phy_out_phits_out_async_1_source   0.000396729   0.0020752   0   0

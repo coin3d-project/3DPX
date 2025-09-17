@@ -1,0 +1,1180 @@
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+PROPERTYDEFINITIONS
+END PROPERTYDEFINITIONS
+
+UNITS
+    DATABASE MICRONS 2000 ;
+END UNITS
+MANUFACTURINGGRID 0.005 ;
+
+LAYER poly_bottom_tier
+    TYPE MASTERSLICE ;
+END poly_bottom_tier
+
+LAYER active_bottom_tier
+    TYPE MASTERSLICE ;
+END active_bottom_tier
+
+LAYER metal1_bottom_tier
+    TYPE ROUTING ;
+    PITCH 0.14 ;
+    WIDTH 0.07 ;
+    THICKNESS 0.13 ;
+    SPACING 0.065  ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.38 ;
+    CAPACITANCE CPERSQDIST 7.7161e-05 ;
+    EDGECAPACITANCE 2.7365e-05 ;
+END metal1_bottom_tier
+
+LAYER via1_bottom_tier
+    TYPE CUT ;
+    WIDTH 0.07 ;
+    SPACING 0.08  ;
+    RESISTANCE 5 ;
+END via1_bottom_tier
+
+LAYER metal2_bottom_tier
+    TYPE ROUTING ;
+    PITCH 0.19 ;
+    WIDTH 0.07 ;
+    THICKNESS 0.14 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.300 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.070 0.070 0.070 0.070 0.070 0.070
+  WIDTH 0.090	 0.070 0.090 0.090 0.090 0.090 0.090
+  WIDTH 0.270	 0.070 0.090 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.070 0.090 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.070 0.090 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.070 0.090 0.270 0.500 0.900 1.500 ;
+    DIRECTION VERTICAL ;
+    RESISTANCE RPERSQ 0.25 ;
+    CAPACITANCE CPERSQDIST 4.0896e-05 ;
+    EDGECAPACITANCE 2.5157e-05 ;
+END metal2_bottom_tier
+
+LAYER via2_bottom_tier
+    TYPE CUT ;
+    WIDTH 0.07 ;
+    SPACING 0.09  ;
+    RESISTANCE 5 ;
+END via2_bottom_tier
+
+LAYER metal3_bottom_tier
+    TYPE ROUTING ;
+    PITCH 0.14 ;
+    WIDTH 0.07 ;
+    THICKNESS 0.14 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.300 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.070 0.070 0.070 0.070 0.070 0.070
+  WIDTH 0.090	 0.070 0.090 0.090 0.090 0.090 0.090
+  WIDTH 0.270	 0.070 0.090 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.070 0.090 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.070 0.090 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.070 0.090 0.270 0.500 0.900 1.500 ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.25 ;
+    CAPACITANCE CPERSQDIST 2.7745e-05 ;
+    EDGECAPACITANCE 2.5157e-05 ;
+END metal3_bottom_tier
+
+LAYER via3_bottom_tier
+    TYPE CUT ;
+    WIDTH 0.07 ;
+    SPACING 0.09  ;
+    RESISTANCE 5 ;
+END via3_bottom_tier
+
+LAYER metal4_bottom_tier
+    TYPE ROUTING ;
+    PITCH 0.28 ;
+    WIDTH 0.14 ;
+    THICKNESS 0.28 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.140 0.140 0.140 0.140 0.140
+  WIDTH 0.270	 0.140 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.140 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.140 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.140 0.270 0.500 0.900 1.500 ;
+    DIRECTION VERTICAL ;
+    RESISTANCE RPERSQ 0.21 ;
+    CAPACITANCE CPERSQDIST 2.0743e-05 ;
+    EDGECAPACITANCE 3.0908e-05 ;
+END metal4_bottom_tier
+
+LAYER via4_bottom_tier
+    TYPE CUT ;
+    WIDTH 0.14 ;
+    SPACING 0.16  ;
+    RESISTANCE 3 ;
+END via4_bottom_tier
+
+LAYER metal5_bottom_tier
+    TYPE ROUTING ;
+    PITCH 0.28 ;
+    WIDTH 0.14 ;
+    THICKNESS 0.28 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.140 0.140 0.140 0.140 0.140
+  WIDTH 0.270	 0.140 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.140 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.140 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.140 0.270 0.500 0.900 1.500 ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.21 ;
+    CAPACITANCE CPERSQDIST 1.3527e-05 ;
+    EDGECAPACITANCE 2.3863e-06 ;
+END metal5_bottom_tier
+
+LAYER via5_bottom_tier
+    TYPE CUT ;
+    WIDTH 0.14 ;
+    SPACING 0.16  ;
+    RESISTANCE 3 ;
+END via5_bottom_tier
+
+LAYER metal6_bottom_tier
+    TYPE ROUTING ;
+    PITCH 0.28 ;
+    WIDTH 0.14 ;
+    THICKNESS 0.28 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.140 0.140 0.140 0.140 0.140
+  WIDTH 0.270	 0.140 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.140 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.140 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.140 0.270 0.500 0.900 1.500 ;
+    DIRECTION VERTICAL ;
+    RESISTANCE RPERSQ 0.21 ;
+    CAPACITANCE CPERSQDIST 1.0036e-05 ;
+    EDGECAPACITANCE 2.3863e-05 ;
+END metal6_bottom_tier
+
+LAYER MIV_bottom_tier
+    TYPE CUT ;
+    WIDTH 0.4 ;
+    SPACING 0.44  ;
+    RESISTANCE 1 ;
+END MIV_bottom_tier
+
+LAYER MIVR
+    TYPE ROUTING ;
+    PITCH 0.8 ;
+    WIDTH 0.4 ;
+    THICKNESS 0.8 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 1.800 2.700 4.000
+  WIDTH 0.000	 0.400 0.400 0.400 0.400
+  WIDTH 0.500	 0.400 0.500 0.500 0.500
+  WIDTH 0.900	 0.400 0.500 0.900 0.900
+  WIDTH 1.500	 0.400 0.500 0.900 1.500 ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.075 ;
+    CAPACITANCE CPERSQDIST 7.9771e-06 ;
+    EDGECAPACITANCE 3.2577e-05 ;
+END MIVR
+
+LAYER MIV_top_tier
+    TYPE CUT ;
+    WIDTH 0.4 ;
+    SPACING 0.44  ;
+    RESISTANCE 1 ;
+END MIV_top_tier
+
+LAYER metal6_top_tier
+    TYPE ROUTING ;
+    PITCH 0.28 ;
+    WIDTH 0.14 ;
+    THICKNESS 0.28 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.140 0.140 0.140 0.140 0.140
+  WIDTH 0.270	 0.140 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.140 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.140 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.140 0.270 0.500 0.900 1.500 ;
+    DIRECTION VERTICAL ;
+    RESISTANCE RPERSQ 0.21 ;
+    CAPACITANCE CPERSQDIST 1.0036e-05 ;
+    EDGECAPACITANCE 2.3863e-05 ;
+END metal6_top_tier
+
+LAYER via5_top_tier
+    TYPE CUT ;
+    WIDTH 0.14 ;
+    SPACING 0.16  ;
+    RESISTANCE 3 ;
+END via5_top_tier
+
+LAYER metal5_top_tier
+    TYPE ROUTING ;
+    PITCH 0.28 ;
+    WIDTH 0.14 ;
+    THICKNESS 0.28 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.140 0.140 0.140 0.140 0.140
+  WIDTH 0.270	 0.140 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.140 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.140 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.140 0.270 0.500 0.900 1.500 ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.21 ;
+    CAPACITANCE CPERSQDIST 1.3527e-05 ;
+    EDGECAPACITANCE 2.3863e-06 ;
+END metal5_top_tier
+
+LAYER via4_top_tier
+    TYPE CUT ;
+    WIDTH 0.14 ;
+    SPACING 0.16  ;
+    RESISTANCE 3 ;
+END via4_top_tier
+
+LAYER metal4_top_tier
+    TYPE ROUTING ;
+    PITCH 0.28 ;
+    WIDTH 0.14 ;
+    THICKNESS 0.28 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.140 0.140 0.140 0.140 0.140
+  WIDTH 0.270	 0.140 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.140 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.140 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.140 0.270 0.500 0.900 1.500 ;
+    DIRECTION VERTICAL ;
+    RESISTANCE RPERSQ 0.21 ;
+    CAPACITANCE CPERSQDIST 2.0743e-05 ;
+    EDGECAPACITANCE 3.0908e-05 ;
+END metal4_top_tier
+
+LAYER via3_top_tier
+    TYPE CUT ;
+    WIDTH 0.07 ;
+    SPACING 0.09  ;
+    RESISTANCE 5 ;
+END via3_top_tier
+
+LAYER metal3_top_tier
+    TYPE ROUTING ;
+    PITCH 0.14 ;
+    WIDTH 0.07 ;
+    THICKNESS 0.14 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.300 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.070 0.070 0.070 0.070 0.070 0.070
+  WIDTH 0.090	 0.070 0.090 0.090 0.090 0.090 0.090
+  WIDTH 0.270	 0.070 0.090 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.070 0.090 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.070 0.090 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.070 0.090 0.270 0.500 0.900 1.500 ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.25 ;
+    CAPACITANCE CPERSQDIST 2.7745e-05 ;
+    EDGECAPACITANCE 2.5157e-05 ;
+END metal3_top_tier
+
+LAYER via2_top_tier
+    TYPE CUT ;
+    WIDTH 0.07 ;
+    SPACING 0.09  ;
+    RESISTANCE 5 ;
+END via2_top_tier
+
+LAYER metal2_top_tier
+    TYPE ROUTING ;
+    PITCH 0.19 ;
+    WIDTH 0.07 ;
+    THICKNESS 0.14 ;
+SPACINGTABLE
+  PARALLELRUNLENGTH 0.000 0.300 0.900 1.800 2.700 4.000
+  WIDTH 0.000	 0.070 0.070 0.070 0.070 0.070 0.070
+  WIDTH 0.090	 0.070 0.090 0.090 0.090 0.090 0.090
+  WIDTH 0.270	 0.070 0.090 0.270 0.270 0.270 0.270
+  WIDTH 0.500	 0.070 0.090 0.270 0.500 0.500 0.500
+  WIDTH 0.900	 0.070 0.090 0.270 0.500 0.900 0.900
+  WIDTH 1.500	 0.070 0.090 0.270 0.500 0.900 1.500 ;
+    DIRECTION VERTICAL ;
+    RESISTANCE RPERSQ 0.25 ;
+    CAPACITANCE CPERSQDIST 4.0896e-05 ;
+    EDGECAPACITANCE 2.5157e-05 ;
+END metal2_top_tier
+
+LAYER via1_top_tier
+    TYPE CUT ;
+    WIDTH 0.07 ;
+    SPACING 0.08  ;
+    RESISTANCE 5 ;
+END via1_top_tier
+
+LAYER metal1_top_tier
+    TYPE ROUTING ;
+    PITCH 0.14 ;
+    WIDTH 0.07 ;
+    THICKNESS 0.13 ;
+    SPACING 0.065  ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.38 ;
+    CAPACITANCE CPERSQDIST 7.7161e-05 ;
+    EDGECAPACITANCE 2.7365e-05 ;
+END metal1_top_tier
+
+LAYER via0_top_tier
+    TYPE CUT ;
+    WIDTH 0.07 ;
+    SPACING 0.08  ;
+    RESISTANCE 5 ;
+END via0_top_tier
+
+LAYER metal0_top_tier
+    TYPE ROUTING ;
+    PITCH 0.14 ;
+    WIDTH 0.07 ;
+    THICKNESS 0.13 ;
+    SPACING 0.065  ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.38 ;
+    CAPACITANCE CPERSQDIST 7.7161e-05 ;
+    EDGECAPACITANCE 2.7365e-05 ;
+END metal0_top_tier
+
+LAYER active_top_tier
+    TYPE MASTERSLICE ;
+END active_top_tier
+
+LAYER poly_top_tier
+    TYPE MASTERSLICE ;
+END poly_top_tier
+
+
+VIA via1_4_bottom_tier DEFAULT
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via1_4_bottom_tier
+
+VIA via1_4_top_tier DEFAULT
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via1_4_top_tier
+
+VIA via1_0_bottom_tier DEFAULT
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via1_0_bottom_tier
+
+VIA via1_0_top_tier DEFAULT
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via1_0_top_tier
+
+VIA via1_1_bottom_tier DEFAULT
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via1_1_bottom_tier
+
+VIA via1_1_top_tier DEFAULT
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via1_1_top_tier
+
+VIA via1_2_bottom_tier DEFAULT
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via1_2_bottom_tier
+
+VIA via1_2_top_tier DEFAULT
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via1_2_top_tier
+
+VIA via1_3_bottom_tier DEFAULT
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via1_3_bottom_tier
+
+VIA via1_3_top_tier DEFAULT
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via1_3_top_tier
+
+VIA via1_5_bottom_tier DEFAULT
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via1_5_bottom_tier
+
+VIA via1_5_top_tier DEFAULT
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via1_5_top_tier
+
+VIA via1_6_bottom_tier DEFAULT
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via1_6_bottom_tier
+
+VIA via1_6_top_tier DEFAULT
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via1_6_top_tier
+
+VIA via1_7_bottom_tier DEFAULT
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via1_7_bottom_tier
+
+VIA via1_7_top_tier DEFAULT
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via1_7_top_tier
+
+VIA via1_8_bottom_tier DEFAULT
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via1_8_bottom_tier
+
+VIA via1_8_top_tier DEFAULT
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal1_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via1_8_top_tier
+
+VIA via2_8_bottom_tier DEFAULT
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via2_8_bottom_tier
+
+VIA via2_8_top_tier DEFAULT
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via2_8_top_tier
+
+VIA via2_4_bottom_tier DEFAULT
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via2_4_bottom_tier
+
+VIA via2_4_top_tier DEFAULT
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via2_4_top_tier
+
+VIA via2_5_bottom_tier DEFAULT
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via2_5_bottom_tier
+
+VIA via2_5_top_tier DEFAULT
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via2_5_top_tier
+
+VIA via2_7_bottom_tier DEFAULT
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via2_7_bottom_tier
+
+VIA via2_7_top_tier DEFAULT
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via2_7_top_tier
+
+VIA via2_6_bottom_tier DEFAULT
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via2_6_bottom_tier
+
+VIA via2_6_top_tier DEFAULT
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via2_6_top_tier
+
+VIA via2_0_bottom_tier DEFAULT
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via2_0_bottom_tier
+
+VIA via2_0_top_tier DEFAULT
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via2_0_top_tier
+
+VIA via2_1_bottom_tier DEFAULT
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via2_1_bottom_tier
+
+VIA via2_1_top_tier DEFAULT
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+END via2_1_top_tier
+
+VIA via2_2_bottom_tier DEFAULT
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via2_2_bottom_tier
+
+VIA via2_2_top_tier DEFAULT
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+END via2_2_top_tier
+
+VIA via2_3_bottom_tier DEFAULT
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via2_3_bottom_tier
+
+VIA via2_3_top_tier DEFAULT
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via2_3_top_tier
+
+VIA via3_2_bottom_tier DEFAULT
+    LAYER via3_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal4_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via3_2_bottom_tier
+
+VIA via3_2_top_tier DEFAULT
+    LAYER via3_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.07 -0.035 0.07 0.035 ;
+    LAYER metal4_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via3_2_top_tier
+
+VIA via3_0_bottom_tier DEFAULT
+    LAYER via3_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal4_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via3_0_bottom_tier
+
+VIA via3_0_top_tier DEFAULT
+    LAYER via3_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal4_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via3_0_top_tier
+
+VIA via3_1_bottom_tier DEFAULT
+    LAYER via3_bottom_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal3_bottom_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal4_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via3_1_bottom_tier
+
+VIA via3_1_top_tier DEFAULT
+    LAYER via3_top_tier ;
+      RECT  -0.035 -0.035 0.035 0.035 ;
+    LAYER metal3_top_tier ;
+      RECT  -0.035 -0.07 0.035 0.07 ;
+    LAYER metal4_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via3_1_top_tier
+
+VIA via4_0_bottom_tier DEFAULT
+    LAYER via4_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal4_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal5_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via4_0_bottom_tier
+
+VIA via4_0_top_tier DEFAULT
+    LAYER via4_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal4_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal5_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via4_0_top_tier
+
+VIA via5_0_bottom_tier DEFAULT
+    LAYER via5_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal5_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal6_bottom_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via5_0_bottom_tier
+
+VIA via5_0_top_tier DEFAULT
+    LAYER via5_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal5_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+    LAYER metal6_top_tier ;
+      RECT  -0.07 -0.07 0.07 0.07 ;
+END via5_0_top_tier
+
+VIA MIV_bottom_tier_PR_C DEFAULT
+    LAYER MIVR ;
+      RECT  -0.4 -0.4 0.4 0.4 ;
+    LAYER metal6_bottom_tier ;
+      RECT  -0.4 -0.4 0.4 0.4 ;
+    LAYER MIV_bottom_tier ;
+      RECT  -0.4 -0.4 0.4 0.4 ;
+END MIV_bottom_tier_PR_C
+
+VIA MIV_top_tier_PR_C DEFAULT
+    LAYER metal6_top_tier ;
+      RECT  -0.4 -0.4 0.4 0.4 ;
+    LAYER MIVR ;
+      RECT  -0.4 -0.4 0.4 0.4 ;
+    LAYER MIV_top_tier ;
+      RECT  -0.4 -0.4 0.4 0.4 ;
+END MIV_top_tier_PR_C
+
+VIARULE Via1Array-0_bottom_tier GENERATE 
+    LAYER metal1_bottom_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-0_bottom_tier
+
+VIARULE Via1Array-0_top_tier GENERATE 
+    LAYER metal1_top_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-0_top_tier
+
+VIARULE Via1Array-1_bottom_tier GENERATE 
+    LAYER metal1_bottom_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-1_bottom_tier
+
+VIARULE Via1Array-1_top_tier GENERATE 
+    LAYER metal1_top_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-1_top_tier
+
+VIARULE Via1Array-2_bottom_tier GENERATE 
+    LAYER metal1_bottom_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-2_bottom_tier
+
+VIARULE Via1Array-2_top_tier GENERATE 
+    LAYER metal1_top_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-2_top_tier
+
+VIARULE Via1Array-3_bottom_tier GENERATE 
+    LAYER metal1_bottom_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-3_bottom_tier
+
+VIARULE Via1Array-3_top_tier GENERATE 
+    LAYER metal1_top_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-3_top_tier
+
+VIARULE Via1Array-4_bottom_tier GENERATE 
+    LAYER metal1_bottom_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER via1_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-4_bottom_tier
+
+VIARULE Via1Array-4_top_tier GENERATE 
+    LAYER metal1_top_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER via1_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.15 BY 0.15 ;
+END Via1Array-4_top_tier
+
+VIARULE Via2Array-0_bottom_tier GENERATE 
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER metal3_bottom_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-0_bottom_tier
+
+VIARULE Via2Array-0_top_tier GENERATE 
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER metal3_top_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-0_top_tier
+
+VIARULE Via2Array-1_bottom_tier GENERATE 
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal3_bottom_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-1_bottom_tier
+
+VIARULE Via2Array-1_top_tier GENERATE 
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal3_top_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-1_top_tier
+
+VIARULE Via2Array-2_bottom_tier GENERATE 
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal3_bottom_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-2_bottom_tier
+
+VIARULE Via2Array-2_top_tier GENERATE 
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal3_top_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-2_top_tier
+
+VIARULE Via2Array-3_bottom_tier GENERATE 
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal3_bottom_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-3_bottom_tier
+
+VIARULE Via2Array-3_top_tier GENERATE 
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal3_top_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-3_top_tier
+
+VIARULE Via2Array-4_bottom_tier GENERATE 
+    LAYER metal2_bottom_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal3_bottom_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER via2_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-4_bottom_tier
+
+VIARULE Via2Array-4_top_tier GENERATE 
+    LAYER metal2_top_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal3_top_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER via2_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via2Array-4_top_tier
+
+VIARULE Via3Array-0_bottom_tier GENERATE 
+    LAYER metal3_bottom_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER metal4_bottom_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via3_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via3Array-0_bottom_tier
+
+VIARULE Via3Array-0_top_tier GENERATE 
+    LAYER metal3_top_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER metal4_top_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via3_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via3Array-0_top_tier
+
+VIARULE Via3Array-1_bottom_tier GENERATE 
+    LAYER metal3_bottom_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal4_bottom_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via3_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via3Array-1_bottom_tier
+
+VIARULE Via3Array-1_top_tier GENERATE 
+    LAYER metal3_top_tier ;
+      ENCLOSURE 0 0.035 ;
+    LAYER metal4_top_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via3_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via3Array-1_top_tier
+
+VIARULE Via3Array-2_bottom_tier GENERATE 
+    LAYER metal3_bottom_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal4_bottom_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via3_bottom_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via3Array-2_bottom_tier
+
+VIARULE Via3Array-2_top_tier GENERATE 
+    LAYER metal3_top_tier ;
+      ENCLOSURE 0.035 0 ;
+    LAYER metal4_top_tier ;
+      ENCLOSURE 0.035 0.035 ;
+    LAYER via3_top_tier ;
+      RECT  -0.035 -0.035  0.035 0.035  ;
+      SPACING 0.16 BY 0.16 ;
+END Via3Array-2_top_tier
+
+VIARULE Via4Array-0_bottom_tier GENERATE 
+    LAYER metal4_bottom_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER metal5_bottom_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER via4_bottom_tier ;
+      RECT  -0.07 -0.07  0.07 0.07  ;
+      SPACING 0.3 BY 0.3 ;
+END Via4Array-0_bottom_tier
+
+VIARULE Via4Array-0_top_tier GENERATE 
+    LAYER metal4_top_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER metal5_top_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER via4_top_tier ;
+      RECT  -0.07 -0.07  0.07 0.07  ;
+      SPACING 0.3 BY 0.3 ;
+END Via4Array-0_top_tier
+
+VIARULE Via5Array-0_bottom_tier GENERATE 
+    LAYER metal5_bottom_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER metal6_bottom_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER via5_bottom_tier ;
+      RECT  -0.07 -0.07  0.07 0.07  ;
+      SPACING 0.3 BY 0.3 ;
+END Via5Array-0_bottom_tier
+
+VIARULE Via5Array-0_top_tier GENERATE 
+    LAYER metal5_top_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER metal6_top_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER via5_top_tier ;
+      RECT  -0.07 -0.07  0.07 0.07  ;
+      SPACING 0.3 BY 0.3 ;
+END Via5Array-0_top_tier
+
+
+VIARULE MIV_bottom_tier_PR_C GENERATE 
+    LAYER metal6_bottom_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER MIVR ;
+      ENCLOSURE 0 0 ;
+    LAYER MIV_bottom_tier ;
+      RECT  -0.4 -0.4  0.4 0.4  ;
+      SPACING 1.68 BY 1.68 ;
+END MIV_bottom_tier_PR_C
+
+VIARULE MIV_top_tier_PR_C GENERATE 
+    LAYER MIVR ;
+      ENCLOSURE 0 0 ;
+    LAYER metal6_top_tier ;
+      ENCLOSURE 0 0 ;
+    LAYER MIV_top_tier ;
+      RECT  -0.4 -0.4  0.4 0.4  ;
+      SPACING 1.68 BY 1.68 ;
+END MIV_top_tier_PR_C
+
+SPACING
+  SAMENET metal1_bottom_tier metal1_bottom_tier 0.065 ;
+  SAMENET metal1_bottom_tier metal1_bottom_tier 0.065 ;
+  SAMENET metal2_bottom_tier metal2_bottom_tier 0.07 ;
+  SAMENET metal2_bottom_tier metal2_bottom_tier 0.07 ;
+  SAMENET metal3_bottom_tier metal3_bottom_tier 0.07 ;
+  SAMENET metal3_bottom_tier metal3_bottom_tier 0.07 ;
+  SAMENET metal4_bottom_tier metal4_bottom_tier 0.14 ;
+  SAMENET metal4_bottom_tier metal4_bottom_tier 0.14 ;
+  SAMENET metal5_bottom_tier metal5_bottom_tier 0.14 ;
+  SAMENET metal5_bottom_tier metal5_bottom_tier 0.14 ;
+  SAMENET metal6_bottom_tier metal6_bottom_tier 0.14 ;
+  SAMENET metal6_bottom_tier metal6_bottom_tier 0.14 ;
+  SAMENET via1_bottom_tier via1_bottom_tier 0.08 ;
+  SAMENET via1_bottom_tier via1_bottom_tier 0.08 ;
+  SAMENET via2_bottom_tier via2_bottom_tier 0.09 ;
+  SAMENET via2_bottom_tier via2_bottom_tier 0.09 ;
+  SAMENET via3_bottom_tier via3_bottom_tier 0.09 ;
+  SAMENET via3_bottom_tier via3_bottom_tier 0.09 ;
+  SAMENET via4_bottom_tier via4_bottom_tier 0.16 ;
+  SAMENET via4_bottom_tier via4_bottom_tier 0.16 ;
+  SAMENET via5_bottom_tier via5_bottom_tier 0.16 ;
+  SAMENET via5_bottom_tier via5_bottom_tier 0.16 ;
+  SAMENET via1_bottom_tier via2_bottom_tier 0 STACK ;
+  SAMENET via1_bottom_tier via2_bottom_tier 0 STACK ;
+  SAMENET via2_bottom_tier via3_bottom_tier 0 STACK ;
+  SAMENET via2_bottom_tier via3_bottom_tier 0 STACK ;
+  SAMENET via3_bottom_tier via4_bottom_tier 0 STACK ;
+  SAMENET via3_bottom_tier via4_bottom_tier 0 STACK ;
+  SAMENET via4_bottom_tier via5_bottom_tier 0 STACK ;
+  SAMENET via4_bottom_tier via5_bottom_tier 0 STACK ;
+  SAMENET metal1_top_tier metal1_top_tier 0.065 ;
+  SAMENET metal1_top_tier metal1_top_tier 0.065 ;
+  SAMENET metal2_top_tier metal2_top_tier 0.07 ;
+  SAMENET metal2_top_tier metal2_top_tier 0.07 ;
+  SAMENET metal3_top_tier metal3_top_tier 0.07 ;
+  SAMENET metal3_top_tier metal3_top_tier 0.07 ;
+  SAMENET metal4_top_tier metal4_top_tier 0.14 ;
+  SAMENET metal4_top_tier metal4_top_tier 0.14 ;
+  SAMENET metal5_top_tier metal5_top_tier 0.14 ;
+  SAMENET metal5_top_tier metal5_top_tier 0.14 ;
+  SAMENET metal6_top_tier metal6_top_tier 0.14 ;
+  SAMENET metal6_top_tier metal6_top_tier 0.14 ;
+  SAMENET via1_top_tier via1_top_tier 0.08 ;
+  SAMENET via1_top_tier via1_top_tier 0.08 ;
+  SAMENET via2_top_tier via2_top_tier 0.09 ;
+  SAMENET via2_top_tier via2_top_tier 0.09 ;
+  SAMENET via3_top_tier via3_top_tier 0.09 ;
+  SAMENET via3_top_tier via3_top_tier 0.09 ;
+  SAMENET via4_top_tier via4_top_tier 0.16 ;
+  SAMENET via4_top_tier via4_top_tier 0.16 ;
+  SAMENET via5_top_tier via5_top_tier 0.16 ;
+  SAMENET via5_top_tier via5_top_tier 0.16 ;
+  SAMENET via1_top_tier via2_top_tier 0 STACK ;
+  SAMENET via1_top_tier via2_top_tier 0 STACK ;
+  SAMENET via2_top_tier via3_top_tier 0 STACK ;
+  SAMENET via2_top_tier via3_top_tier 0 STACK ;
+  SAMENET via3_top_tier via4_top_tier 0 STACK ;
+  SAMENET via3_top_tier via4_top_tier 0 STACK ;
+  SAMENET via4_top_tier via5_top_tier 0 STACK ;
+  SAMENET via4_top_tier via5_top_tier 0 STACK ;
+
+END SPACING
+
+SITE FreePDK45_38x28_10R_NP_162NW_34O
+    CLASS CORE ;
+    SYMMETRY Y ;
+    SIZE 0.19 BY 1.4 ;
+END FreePDK45_38x28_10R_NP_162NW_34O
+END LIBRARY

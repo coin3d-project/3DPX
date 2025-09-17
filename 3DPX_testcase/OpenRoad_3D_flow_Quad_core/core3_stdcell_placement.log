@@ -1,0 +1,1002 @@
+OpenROAD v2.0-21011-gbb2a3e831 
+Features included (+) or not (-): +GPU +GUI +Python : Debug
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 12 thread(s).
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_tech.lef, created 31 layers, 48 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_bottom_tier already seen in nangate_tech
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef, created 135 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier_shrinked.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_top_tier_shrinked already seen in nangate_tech
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier_shrinked.lef, created 135 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0128] Design: RocketTile_2
+[INFO ODB-0097] 		Created 100000 Nets
+[INFO ODB-0130]     Created 379 pins.
+[INFO ODB-0131]     Created 89884 components and 566740 component-terminals.
+[INFO ODB-0133]     Created 109207 nets and 386972 connections.
+[WARNING STA-0347] current_design for other than top cell not supported.
+[WARNING STA-0440] set_output_delay not allowed on input port 'clock'.
+[WARNING STA-0440] set_output_delay not allowed on input port 'reset'.
+[INFO GPL-0153] Revert-to-snapshot on divergence detection is disabled.
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: (  0.190  1.400 ) um
+[INFO GPL-0004] CoreBBox: (  0.000  0.000 ) ( 717.820 1229.200 ) um
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[10] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[10] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[11] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[11] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[12] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[12] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[13] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[13] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[14] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[14] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[15] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[15] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[16] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[16] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[17] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[17] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[18] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[18] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[19] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[19] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[20] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[20] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[21] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[21] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[22] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[22] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[23] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[23] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[24] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[24] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[25] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[25] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[26] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[26] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[27] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[27] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[28] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[28] is placed in (0, 0)
+[WARNING GPL-0001] auto_wfi_out_0 toplevel port is not placed!
+       Replace will regard auto_wfi_out_0 is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_e_bits_sink[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_e_bits_sink[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_e_bits_sink[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_e_bits_sink[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_e_bits_sink[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_e_bits_sink[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_source[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_source[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_source[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_source[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_size[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_size[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_size[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_size[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_size[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_size[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[5] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[5] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[4] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[4] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[30] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[30] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[29] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[29] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[28] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[28] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_size[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_size[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[30] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[30] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[29] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[29] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[31] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[31] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[4] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[4] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[5] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[5] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[6] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[6] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[7] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[7] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[8] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[8] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_address[9] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_address[9] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[10] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[10] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[11] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[11] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[12] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[12] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[13] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[13] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[14] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[14] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[15] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[15] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[16] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[16] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[17] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[17] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[18] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[18] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[19] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[19] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[20] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[20] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[21] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[21] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[22] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[22] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[23] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[23] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[24] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[24] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[25] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[25] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[26] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[26] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[27] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[27] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[28] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[28] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[29] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[29] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[30] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[30] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[31] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[31] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[32] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[32] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[33] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[33] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[34] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[34] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[35] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[35] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[36] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[36] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[37] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[37] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[38] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[38] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[39] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[39] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[40] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[40] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[41] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[41] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[42] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[42] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[43] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[43] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[44] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[44] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[45] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[45] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[46] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[46] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[47] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[47] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[48] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[48] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[49] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[49] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[4] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[4] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[50] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[50] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[51] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[51] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[52] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[52] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[53] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[53] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[54] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[54] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[55] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[55] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[56] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[56] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[57] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[57] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[58] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[58] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[59] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[59] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[5] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[5] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[60] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[60] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[61] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[61] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[62] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[62] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[63] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[63] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[6] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[6] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[7] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[7] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[8] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[8] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_data[9] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_data[9] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_mask[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_mask[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_mask[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_mask[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_mask[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_mask[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_mask[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_mask[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_mask[4] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_mask[4] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_mask[5] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_mask[5] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_mask[6] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_mask[6] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_mask[7] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_mask[7] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_opcode[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_opcode[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_opcode[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_opcode[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_opcode[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_opcode[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_param[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_param[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_param[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_param[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_param[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_param[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_size[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_size[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_size[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_size[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_size[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_size[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_source[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_source[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_bits_source[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_bits_source[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_ready toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_ready is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_a_valid toplevel port is not placed!
+       Replace will regard auto_buffer_out_a_valid is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[10] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[10] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[11] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[11] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[12] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[12] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[13] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[13] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[14] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[14] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[15] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[15] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[16] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[16] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[17] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[17] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[18] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[18] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[19] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[19] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[20] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[20] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[21] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[21] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[22] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[22] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[23] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[23] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[24] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[24] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[25] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[25] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[26] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[26] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[27] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[27] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[28] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[28] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[29] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[29] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[30] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[30] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[31] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[31] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[4] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[4] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[5] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[5] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[6] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[6] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[7] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[7] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[8] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[8] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_address[9] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_address[9] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_corrupt toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_corrupt is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_mask[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_mask[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_mask[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_mask[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_mask[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_mask[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_mask[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_mask[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_mask[4] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_mask[4] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_mask[5] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_mask[5] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_mask[6] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_mask[6] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_mask[7] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_mask[7] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_opcode[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_opcode[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_opcode[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_opcode[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_opcode[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_opcode[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_param[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_param[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_param[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_param[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_size[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_size[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_size[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_size[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_size[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_size[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_size[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_size[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_source[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_source[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_bits_source[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_bits_source[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_ready toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_ready is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_b_valid toplevel port is not placed!
+       Replace will regard auto_buffer_out_b_valid is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[10] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[10] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[11] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[11] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[12] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[12] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[13] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[13] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[14] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[14] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[15] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[15] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[16] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[16] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[17] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[17] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[18] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[18] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[19] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[19] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[20] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[20] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[21] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[21] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[22] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[22] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[23] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[23] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[24] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[24] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[25] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[25] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[26] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[26] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[27] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[27] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[31] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[31] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[6] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[6] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[7] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[7] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[8] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[8] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_address[9] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_address[9] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[10] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[10] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[11] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[11] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[12] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[12] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[13] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[13] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[14] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[14] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[15] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[15] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[16] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[16] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[17] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[17] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[18] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[18] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[19] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[19] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[20] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[20] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[21] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[21] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[22] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[22] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[23] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[23] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[24] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[24] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[25] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[25] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[26] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[26] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[27] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[27] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[28] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[28] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[29] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[29] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[30] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[30] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[31] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[31] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[32] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[32] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[33] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[33] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[34] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[34] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[35] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[35] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[36] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[36] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[37] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[37] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[38] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[38] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[39] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[39] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[40] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[40] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[41] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[41] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[42] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[42] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[43] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[43] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[44] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[44] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[45] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[45] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[46] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[46] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[47] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[47] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[48] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[48] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[49] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[49] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[4] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[4] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[50] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[50] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[51] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[51] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[52] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[52] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[53] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[53] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[54] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[54] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[55] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[55] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[56] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[56] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[57] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[57] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[58] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[58] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[59] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[59] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[5] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[5] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[60] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[60] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[61] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[61] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[62] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[62] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[63] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[63] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[6] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[6] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[7] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[7] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[8] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[8] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_data[9] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_data[9] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_opcode[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_opcode[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_opcode[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_opcode[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_opcode[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_opcode[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_param[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_param[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_param[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_param[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_param[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_param[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_bits_size[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_bits_size[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_ready toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_ready is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_c_valid toplevel port is not placed!
+       Replace will regard auto_buffer_out_c_valid is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_corrupt toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_corrupt is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[10] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[10] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[11] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[11] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[12] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[12] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[13] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[13] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[14] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[14] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[15] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[15] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[16] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[16] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[17] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[17] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[18] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[18] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[19] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[19] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[20] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[20] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[21] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[21] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[22] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[22] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[23] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[23] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[24] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[24] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[25] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[25] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[26] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[26] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[27] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[27] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[28] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[28] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[29] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[29] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[30] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[30] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[31] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[31] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[32] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[32] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[33] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[33] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[34] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[34] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[35] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[35] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[36] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[36] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[37] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[37] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[38] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[38] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[39] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[39] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[40] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[40] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[41] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[41] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[42] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[42] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[43] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[43] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[44] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[44] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[45] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[45] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[46] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[46] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[47] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[47] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[48] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[48] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[49] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[49] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[4] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[4] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[50] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[50] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[51] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[51] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[52] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[52] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[53] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[53] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[54] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[54] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[55] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[55] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[56] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[56] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[57] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[57] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[58] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[58] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[59] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[59] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[5] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[5] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[60] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[60] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[61] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[61] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[62] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[62] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[63] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[63] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[6] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[6] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[7] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[7] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[8] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[8] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_data[9] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_data[9] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_denied toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_denied is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_opcode[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_opcode[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_opcode[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_opcode[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_opcode[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_opcode[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_param[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_param[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_param[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_param[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_sink[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_sink[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_sink[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_sink[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_sink[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_sink[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_size[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_size[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_size[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_size[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_size[2] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_size[2] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_size[3] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_size[3] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_source[0] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_source[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_bits_source[1] toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_bits_source[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_ready toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_ready is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_d_valid toplevel port is not placed!
+       Replace will regard auto_buffer_out_d_valid is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_e_ready toplevel port is not placed!
+       Replace will regard auto_buffer_out_e_ready is placed in (0, 0)
+[WARNING GPL-0001] auto_buffer_out_e_valid toplevel port is not placed!
+       Replace will regard auto_buffer_out_e_valid is placed in (0, 0)
+[WARNING GPL-0001] auto_hartid_in[0] toplevel port is not placed!
+       Replace will regard auto_hartid_in[0] is placed in (0, 0)
+[WARNING GPL-0001] auto_hartid_in[1] toplevel port is not placed!
+       Replace will regard auto_hartid_in[1] is placed in (0, 0)
+[WARNING GPL-0001] auto_int_local_in_0_0 toplevel port is not placed!
+       Replace will regard auto_int_local_in_0_0 is placed in (0, 0)
+[WARNING GPL-0001] auto_int_local_in_1_0 toplevel port is not placed!
+       Replace will regard auto_int_local_in_1_0 is placed in (0, 0)
+[WARNING GPL-0001] auto_int_local_in_1_1 toplevel port is not placed!
+       Replace will regard auto_int_local_in_1_1 is placed in (0, 0)
+[WARNING GPL-0001] auto_int_local_in_2_0 toplevel port is not placed!
+       Replace will regard auto_int_local_in_2_0 is placed in (0, 0)
+[WARNING GPL-0001] auto_int_local_in_3_0 toplevel port is not placed!
+       Replace will regard auto_int_local_in_3_0 is placed in (0, 0)
+[WARNING GPL-0001] clock toplevel port is not placed!
+       Replace will regard clock is placed in (0, 0)
+[WARNING GPL-0001] reset toplevel port is not placed!
+       Replace will regard reset is placed in (0, 0)
+[INFO GPL-0006] Number of instances:             89884
+[INFO GPL-0007] Movable instances:               89840
+[INFO GPL-0008] Fixed instances:                    44
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                 109207
+[INFO GPL-0011] Number of pins:                 387351
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 718.000 1230.000 ) um
+[INFO GPL-0013] Core BBox: (  0.000  0.000 ) ( 717.820 1229.200 ) um
+[INFO GPL-0016] Core area:                  882344.344 um^2
+[INFO GPL-0017] Fixed instances area:           30.856 um^2
+[INFO GPL-0018] Movable instances area:     274758.316 um^2
+[INFO GPL-0019] Utilization:                    31.141 %
+[INFO GPL-0020] Standard cells area:        274758.316 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[InitialPlace]  Iter: 1 conjugate gradient residual: 0.02851846 HPWL: 3274749840
+[InitialPlace]  Iter: 2 conjugate gradient residual: 0.01571511 HPWL: 2977740602
+[InitialPlace]  Iter: 3 conjugate gradient residual: 0.01379041 HPWL: 2852399479
+[InitialPlace]  Iter: 4 conjugate gradient residual: 0.00434866 HPWL: 2600910171
+[InitialPlace]  Iter: 5 conjugate gradient residual: 0.00178132 HPWL: 2446729394
+[InitialPlace]  Iter: 6 conjugate gradient residual: 0.00034961 HPWL: 2369597041
+[InitialPlace]  Iter: 7 conjugate gradient residual: 0.00014258 HPWL: 2308337731
+[InitialPlace]  Iter: 8 conjugate gradient residual: 0.00011100 HPWL: 2271452053
+[InitialPlace]  Iter: 9 conjugate gradient residual: 0.00009941 HPWL: 2243052390
+[InitialPlace]  Iter: 10 conjugate gradient residual: 0.00009688 HPWL: 2219962776
+[InitialPlace]  Iter: 11 conjugate gradient residual: 0.00009070 HPWL: 2202004834
+[InitialPlace]  Iter: 12 conjugate gradient residual: 0.00008703 HPWL: 2201751971
+[InitialPlace]  Iter: 13 conjugate gradient residual: 0.00009486 HPWL: 2206904091
+[InitialPlace]  Iter: 14 conjugate gradient residual: 0.00007337 HPWL: 2215188146
+[InitialPlace]  Iter: 15 conjugate gradient residual: 0.00008799 HPWL: 2219441116
+[InitialPlace]  Iter: 16 conjugate gradient residual: 0.00007579 HPWL: 2218346880
+[InitialPlace]  Iter: 17 conjugate gradient residual: 0.00007533 HPWL: 2220632689
+[InitialPlace]  Iter: 18 conjugate gradient residual: 0.00008089 HPWL: 2215218958
+[InitialPlace]  Iter: 19 conjugate gradient residual: 0.00008034 HPWL: 2216035704
+[InitialPlace]  Iter: 20 conjugate gradient residual: 0.00007454 HPWL: 2210021457
+[INFO GPL-0023] Placement target density:       0.7000
+[INFO GPL-0024] Movable insts average area:      3.058 um^2
+[INFO GPL-0025] Ideal bin area:                  4.369 um^2
+[INFO GPL-0026] Ideal bin count:                201955
+[INFO GPL-0027] Total bin area:             882344.344 um^2
+[INFO GPL-0028] Bin count (X, Y):         256 ,    256
+[INFO GPL-0029] Bin size (W * H):       2.804 *  4.802 um
+[INFO GPL-0030] Number of bins:                  65536
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        1 |   0.9730 |  2.174811e+09 |   +0.00% |  2.03e-16 |      
+       10 |   0.9503 |  2.433066e+09 |  +11.87% |  3.05e-16 |      
+       20 |   0.9432 |  2.499123e+09 |   +2.71% |  4.92e-16 |      
+       30 |   0.9421 |  2.547900e+09 |   +1.95% |  7.98e-16 |      
+       40 |   0.9403 |  2.578689e+09 |   +1.21% |  1.29e-15 |      
+       50 |   0.9381 |  2.592322e+09 |   +0.53% |  2.10e-15 |      
+       60 |   0.9370 |  2.591122e+09 |   -0.05% |  3.43e-15 |      
+       70 |   0.9358 |  2.586894e+09 |   -0.16% |  5.58e-15 |      
+       80 |   0.9353 |  2.586255e+09 |   -0.02% |  9.10e-15 |      
+       90 |   0.9348 |  2.589171e+09 |   +0.11% |  1.48e-14 |      
+      100 |   0.9342 |  2.592492e+09 |   +0.13% |  2.41e-14 |      
+      110 |   0.9338 |  2.594491e+09 |   +0.08% |  3.93e-14 |      
+      120 |   0.9333 |  2.595329e+09 |   +0.03% |  6.40e-14 |      
+      130 |   0.9331 |  2.595424e+09 |   +0.00% |  1.04e-13 |      
+      140 |   0.9333 |  2.595162e+09 |   -0.01% |  1.70e-13 |      
+      150 |   0.9330 |  2.595064e+09 |   -0.00% |  2.76e-13 |      
+      160 |   0.9329 |  2.596402e+09 |   +0.05% |  4.50e-13 |      
+      170 |   0.9322 |  2.601165e+09 |   +0.18% |  7.33e-13 |      
+      180 |   0.9313 |  2.615008e+09 |   +0.53% |  1.19e-12 |      
+      190 |   0.9289 |  2.648876e+09 |   +1.30% |  1.93e-12 |      
+      200 |   0.9255 |  2.715340e+09 |   +2.51% |  3.13e-12 |      
+      210 |   0.9190 |  2.823977e+09 |   +4.00% |  5.04e-12 |      
+      220 |   0.9086 |  2.978964e+09 |   +5.49% |  8.08e-12 |      
+      230 |   0.8932 |  3.177548e+09 |   +6.67% |  1.29e-11 |      
+      240 |   0.8738 |  3.398651e+09 |   +6.96% |  2.05e-11 |      
+      250 |   0.8507 |  3.629634e+09 |   +6.80% |  3.25e-11 |      
+      260 |   0.8257 |  3.895880e+09 |   +7.34% |  5.15e-11 |      
+      270 |   0.7988 |  4.121959e+09 |   +5.80% |  8.17e-11 |      
+[INFO GPL-0100] Timing-driven iteration 1/5, virtual: true.
+[INFO GPL-0101]    Iter: 275, overflow: 0.782, keep resizer changes at: 0.3, HPWL: 4213038656
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109191
+    final |     +5.5% |   20257 |     439 |           304 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 52 slew violations.
+[INFO RSZ-0036] Found 139 capacitance violations.
+[INFO RSZ-0037] Found 192 long wires.
+[INFO RSZ-0039] Resized 20257 instances.
+[INFO RSZ-0038] Inserted 439 buffers in 304 nets.
+[INFO GPL-0106] Timing-driven: worst slack -1.22e-09
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      280 |   0.7704 |  4.108547e+09 |   -0.33% |  1.25e-10 |      
+      290 |   0.7443 |  4.211887e+09 |   +2.52% |  2.01e-10 |      
+      300 |   0.7155 |  4.358040e+09 |   +3.47% |  3.22e-10 |      
+      310 |   0.6805 |  4.511120e+09 |   +3.51% |  5.16e-10 |      
+      320 |   0.6404 |  4.551019e+09 |   +0.88% |  8.35e-10 |      
+[INFO GPL-0100] Timing-driven iteration 2/5, virtual: true.
+[INFO GPL-0101]    Iter: 322, overflow: 0.633, keep resizer changes at: 0.3, HPWL: 4546294802
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109191
+    final |     +6.2% |   21886 |     434 |           313 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 69 slew violations.
+[INFO RSZ-0036] Found 144 capacitance violations.
+[INFO RSZ-0037] Found 180 long wires.
+[INFO RSZ-0039] Resized 21886 instances.
+[INFO RSZ-0038] Inserted 434 buffers in 313 nets.
+[INFO GPL-0106] Timing-driven: worst slack -2.53e-09
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      330 |   0.5996 |  4.531558e+09 |   -0.43% |  1.35e-09 |      
+      340 |   0.5549 |  4.677338e+09 |   +3.22% |  2.16e-09 |      
+      350 |   0.5122 |  4.664223e+09 |   -0.28% |  3.51e-09 |      
+      360 |   0.4708 |  4.765448e+09 |   +2.17% |  5.66e-09 |      
+      370 |   0.4259 |  4.783204e+09 |   +0.37% |  9.17e-09 |      
+      380 |   0.3797 |  4.821414e+09 |   +0.80% |  1.48e-08 |      
+      390 |   0.3375 |  4.905372e+09 |   +1.74% |  2.37e-08 |      
+      400 |   0.3047 |  4.922180e+09 |   +0.34% |  3.49e-08 |      
+[INFO GPL-0100] Timing-driven iteration 3/5, virtual: false.
+[INFO GPL-0101]    Iter: 406, overflow: 0.282, keep resizer changes at: 0.3, HPWL: 4935164089
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109191
+    final |     +6.4% |   20956 |     474 |           341 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 77 slew violations.
+[INFO RSZ-0036] Found 167 capacitance violations.
+[INFO RSZ-0037] Found 181 long wires.
+[INFO RSZ-0039] Resized 20956 instances.
+[INFO RSZ-0038] Inserted 474 buffers in 341 nets.
+[INFO GPL-0106] Timing-driven: worst slack -1.72e-09
+[INFO GPL-0107] Timing-driven: repair_design delta area: -9576.266 um^2 (-3.49%)
+[INFO GPL-0108] Timing-driven: repair_design, gpl cells created: 474 (+0.00%)
+[INFO GPL-0109] Timing-driven: inserted buffers as reported by repair_design: 474
+[INFO GPL-0110] Timing-driven: new target density: 0.6891464
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      410 |   0.2739 |  4.906035e+09 |   -0.33% |  5.08e-08 |      
+      420 |   0.2414 |  4.874785e+09 |   -0.64% |  7.48e-08 |      
+      430 |   0.2118 |  4.877939e+09 |   +0.06% |  1.10e-07 |      
+[INFO GPL-0100] Timing-driven iteration 4/5, virtual: false.
+[INFO GPL-0101]    Iter: 433, overflow: 0.203, keep resizer changes at: 0.3, HPWL: 4879167541
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109191
+    final |     +2.2% |   16255 |      82 |           103 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 27 slew violations.
+[INFO RSZ-0036] Found 71 capacitance violations.
+[INFO RSZ-0037] Found 9 long wires.
+[INFO RSZ-0039] Resized 16255 instances.
+[INFO RSZ-0038] Inserted 82 buffers in 103 nets.
+[INFO GPL-0106] Timing-driven: worst slack -1.58e-09
+[INFO GPL-0107] Timing-driven: repair_design delta area: 2287.334 um^2 (+0.86%)
+[INFO GPL-0108] Timing-driven: repair_design, gpl cells created: 82 (+0.00%)
+[INFO GPL-0109] Timing-driven: inserted buffers as reported by repair_design: 82
+[INFO GPL-0110] Timing-driven: new target density: 0.69173884
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      440 |   0.1818 |  4.902196e+09 |   +0.50% |  1.62e-07 |      
+      450 |   0.1560 |  4.906938e+09 |   +0.10% |  2.38e-07 |      
+[INFO GPL-0100] Timing-driven iteration 5/5, virtual: false.
+[INFO GPL-0101]    Iter: 455, overflow: 0.144, keep resizer changes at: 0.3, HPWL: 4909668016
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109191
+    final |     +0.9% |   14348 |      45 |            59 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 19 slew violations.
+[INFO RSZ-0036] Found 39 capacitance violations.
+[INFO RSZ-0037] Found 5 long wires.
+[INFO RSZ-0039] Resized 14348 instances.
+[INFO RSZ-0038] Inserted 45 buffers in 59 nets.
+[INFO GPL-0106] Timing-driven: worst slack -1.48e-09
+[INFO GPL-0107] Timing-driven: repair_design delta area: 996.170 um^2 (+0.37%)
+[INFO GPL-0108] Timing-driven: repair_design, gpl cells created: 45 (+0.00%)
+[INFO GPL-0109] Timing-driven: inserted buffers as reported by repair_design: 45
+[INFO GPL-0110] Timing-driven: new target density: 0.6928678
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      460 |   0.1326 |  4.920799e+09 |   +0.28% |  3.50e-07 |      
+      470 |   0.1104 |  4.922391e+09 |   +0.03% |  5.16e-07 |      
+[INFO GPL-1001] Finished with Overflow: 0.098411
+[INFO GPL-1002] Placed Cell Area            267826.0900
+[INFO GPL-1003] Available Free Area         882313.4880
+[INFO GPL-1004] Minimum Feasible Density        0.3035 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.3373
+[INFO GPL-1008]     - For 80% usage of free space: 0.3794
+Found 44 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0067] Restrict pins [ auto_buffer_out_a_bits_address[0] auto_buffer_out_a_bits_address[10] auto_buffer_out_a_bits_address[11] auto_buffer_out_a_bits_address[12] auto_buffer_out_a_bits_address[13] ... ] to region 0.00u-718.00u at the BOTTOM edge.
+[INFO PPL-0001] Number of available slots 12534
+[INFO PPL-0002] Number of I/O             379
+[INFO PPL-0003] Number of I/O w/sink      346
+[INFO PPL-0004] Number of I/O w/o sink    33
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 238404.19 um.
+Placement Analysis
+---------------------------------
+total displacement      98133.1 u
+average displacement        1.1 u
+max displacement            5.4 u
+original HPWL         2534934.7 u
+legalized HPWL        2614455.9 u
+delta HPWL                    3 %
+

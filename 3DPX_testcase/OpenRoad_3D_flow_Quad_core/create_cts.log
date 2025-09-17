@@ -1,0 +1,337 @@
+OpenROAD v2.0-21011-gbb2a3e831 
+Features included (+) or not (-): +GPU +GUI +Python : Debug
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 12 thread(s).
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_tech.lef, created 31 layers, 48 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_bottom_tier already seen in nangate_tech
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef, created 135 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_top_tier already seen in nangate_tech
+[INFO ODB-0394] Duplicate site IO in nangate_stdcell_top_tier already seen in nangate_stdcell_bottom_tier
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier.lef, created 135 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_top_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_top_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_top_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_top_tier.lef, created 1 library cells
+[INFO ODB-0128] Design: DigitalTop
+[INFO ODB-0094] 		Created 100000 Insts
+[INFO ODB-0094] 		Created 200000 Insts
+[INFO ODB-0094] 		Created 300000 Insts
+[INFO ODB-0094] 		Created 400000 Insts
+[INFO ODB-0097] 		Created 100000 Nets
+[INFO ODB-0097] 		Created 200000 Nets
+[INFO ODB-0097] 		Created 300000 Nets
+[INFO ODB-0097] 		Created 400000 Nets
+[INFO ODB-0097] 		Created 500000 Nets
+[INFO ODB-0130]     Created 409 pins.
+[INFO ODB-0131]     Created 443232 components and 2757554 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 886464 connections.
+[INFO ODB-0133]     Created 533041 nets and 1870834 connections.
+[INFO RSZ-0094] Found 28815 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 28815 out of 28815 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+--------------------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |  -98.059 |  -678659.1 |  28815 | coh_wrapper_l2_inclusive_cache_bank_sched/sinkA_putbuffer_head_ext_Memory_reg\[20\]\[0\]/D
+    5300* |       0 |    4064 |     1562 |    108 |   618 |    +0.1% |  -17.382 |  -259596.1 |  28503 | cbus_buffer_nodeIn_d_q_ram_ext_Memory_reg\[0\]\[37\]/SI
+    final |       0 |    4216 |     1562 |    108 |   618 |    +0.1% |  -17.359 |  -255870.7 |  28503 | cbus_buffer_nodeIn_d_q_ram_ext_Memory_reg\[0\]\[39\]/SI
+--------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0045] Inserted 1090 buffers, 1 to split loads.
+[INFO RSZ-0041] Resized 4216 instances.
+[INFO RSZ-0043] Swapped pins on 618 instances.
+[INFO RSZ-0049] Cloned 108 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0046] Found 116 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |  -0.846 | -40.720 | serial_tl_domain_phy_in_phits_in_async_2_source_ridx_ridx_gray_output_chain_2_sync_0_reg/RN
+    final |       2 |       4 |            0 |    +0.0% |  -0.048 |  -0.230 | coh_wrapper_l2_inclusive_cache_bank_sched/sourceC_queue_ram_ext_Memory_reg\[2\]\[9\]/D
+--------------------------------------------------------------------------------------
+[WARNING RSZ-0066] Unable to repair all hold violations.
+[INFO RSZ-0032] Inserted 4 hold buffers.
+Placement Analysis
+---------------------------------
+total displacement     143564.5 u
+average displacement        0.3 u
+max displacement          670.0 u
+original HPWL        92440000.7 u
+legalized HPWL       92539843.4 u
+delta HPWL                    0 %
+
+[INFO CTS-0050] Root buffer is CLKBUF_X3_top_tier.
+[INFO CTS-0051] Sink buffer is CLKBUF_X3_top_tier.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    CLKBUF_X1_top_tier
+                    CLKBUF_X2_top_tier
+                    CLKBUF_X3_top_tier
+[INFO CTS-0049] Characterization buffer is CLKBUF_X3_top_tier.
+[INFO CTS-0007] Net "auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock" found for clock "clk".
+[INFO CTS-0011]  Clock net "auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock" for macros has 201 sinks.
+[INFO CTS-0011]  Clock net "auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock_regs" for registers has 82596 sinks.
+[INFO CTS-0007] Net "debug_clock" found for clock "dbg_clk".
+[INFO CTS-0010]  Clock net "debug_clock" has 1109 sinks.
+[INFO CTS-0007] Net "serial_tl_0_clock_in" found for clock "serial_clk".
+[INFO CTS-0010]  Clock net "serial_tl_0_clock_in" has 552 sinks.
+[INFO CTS-0008] TritonCTS found 4 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0201] 5 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock.
+[INFO CTS-0028]  Total number of sinks: 201.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 20 and with maximum cluster diameter of 100.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 14000  dbu (7 um).
+[INFO CTS-0204] A clustering solution was found from clustering size of 20 and clustering diameter of 100.
+[INFO CTS-0205] Better solution may be possible if either -sink_clustering_size, -sink_clustering_max_diameter, or both options are omitted to enable automatic clustering.
+[INFO CTS-0019]  Total number of sinks after clustering: 86.
+[INFO CTS-0024]  Normalized sink region: [(6.81357, 3.53), (200.854, 354.127)].
+[INFO CTS-0025]     Width:  194.0400.
+[INFO CTS-0026]     Height: 350.5971.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 43
+    Sub-region size: 194.0400 X 175.2986
+[INFO CTS-0034]     Segment length (rounded): 88.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 22
+    Sub-region size: 97.0200 X 175.2986
+[INFO CTS-0034]     Segment length (rounded): 48.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 11
+    Sub-region size: 97.0200 X 87.6493
+[INFO CTS-0034]     Segment length (rounded): 44.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 86.
+[INFO CTS-0201] 5 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock_regs.
+[INFO CTS-0028]  Total number of sinks: 82596.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 20 and with maximum cluster diameter of 100.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 14000  dbu (7 um).
+[INFO CTS-0204] A clustering solution was found from clustering size of 30 and clustering diameter of 100.
+[INFO CTS-0205] Better solution may be possible if either -sink_clustering_size, -sink_clustering_max_diameter, or both options are omitted to enable automatic clustering.
+[INFO CTS-0019]  Total number of sinks after clustering: 2802.
+[INFO CTS-0024]  Normalized sink region: [(3.46667, 3.88802), (208.652, 355.133)].
+[INFO CTS-0025]     Width:  205.1857.
+[INFO CTS-0026]     Height: 351.2447.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 1401
+    Sub-region size: 205.1857 X 175.6223
+[INFO CTS-0034]     Segment length (rounded): 88.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 701
+    Sub-region size: 102.5928 X 175.6223
+[INFO CTS-0034]     Segment length (rounded): 52.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 351
+    Sub-region size: 102.5928 X 87.8112
+[INFO CTS-0034]     Segment length (rounded): 44.
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 176
+    Sub-region size: 51.2964 X 87.8112
+[INFO CTS-0034]     Segment length (rounded): 26.
+ Level 5
+    Direction: Vertical
+    Sinks per sub-region: 88
+    Sub-region size: 51.2964 X 43.9056
+[INFO CTS-0034]     Segment length (rounded): 22.
+ Level 6
+    Direction: Horizontal
+    Sinks per sub-region: 44
+    Sub-region size: 25.6482 X 43.9056
+[INFO CTS-0034]     Segment length (rounded): 12.
+ Level 7
+    Direction: Vertical
+    Sinks per sub-region: 22
+    Sub-region size: 25.6482 X 21.9528
+[INFO CTS-0034]     Segment length (rounded): 10.
+ Level 8
+    Direction: Horizontal
+    Sinks per sub-region: 11
+    Sub-region size: 12.8241 X 21.9528
+[INFO CTS-0034]     Segment length (rounded): 6.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 2802.
+[INFO CTS-0201] 5 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net debug_clock.
+[INFO CTS-0028]  Total number of sinks: 1109.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 20 and with maximum cluster diameter of 100.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 14000  dbu (7 um).
+[INFO CTS-0204] A clustering solution was found from clustering size of 30 and clustering diameter of 100.
+[INFO CTS-0205] Better solution may be possible if either -sink_clustering_size, -sink_clustering_max_diameter, or both options are omitted to enable automatic clustering.
+[INFO CTS-0019]  Total number of sinks after clustering: 222.
+[INFO CTS-0024]  Normalized sink region: [(6.82447, 7.14629), (209.122, 355.409)].
+[INFO CTS-0025]     Width:  202.2977.
+[INFO CTS-0026]     Height: 348.2627.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 111
+    Sub-region size: 202.2977 X 174.1313
+[INFO CTS-0034]     Segment length (rounded): 88.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 56
+    Sub-region size: 101.1488 X 174.1313
+[INFO CTS-0034]     Segment length (rounded): 50.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 28
+    Sub-region size: 101.1488 X 87.0657
+[INFO CTS-0034]     Segment length (rounded): 44.
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 14
+    Sub-region size: 50.5744 X 87.0657
+[INFO CTS-0034]     Segment length (rounded): 26.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 222.
+[INFO CTS-0201] 5 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net serial_tl_0_clock_in.
+[INFO CTS-0028]  Total number of sinks: 552.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 20 and with maximum cluster diameter of 100.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 14000  dbu (7 um).
+[INFO CTS-0204] A clustering solution was found from clustering size of 20 and clustering diameter of 100.
+[INFO CTS-0205] Better solution may be possible if either -sink_clustering_size, -sink_clustering_max_diameter, or both options are omitted to enable automatic clustering.
+[INFO CTS-0019]  Total number of sinks after clustering: 172.
+[INFO CTS-0024]  Normalized sink region: [(4.77973, 5.52929), (209.005, 355.471)].
+[INFO CTS-0025]     Width:  204.2249.
+[INFO CTS-0026]     Height: 349.9422.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 86
+    Sub-region size: 204.2249 X 174.9711
+[INFO CTS-0034]     Segment length (rounded): 88.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 43
+    Sub-region size: 102.1125 X 174.9711
+[INFO CTS-0034]     Segment length (rounded): 52.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 22
+    Sub-region size: 102.1125 X 87.4855
+[INFO CTS-0034]     Segment length (rounded): 44.
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 11
+    Sub-region size: 51.0562 X 87.4855
+[INFO CTS-0034]     Segment length (rounded): 26.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 172.
+[INFO CTS-0018]     Created 83 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 6.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 7.
+[INFO CTS-0015]     Created 83 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:26, 3:25, 4:7, 5:3, 7:1, 8:2, 10:2, 11:1, 12:1, 13:1, 14:1..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0018]     Created 3164 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 10.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 11.
+[INFO CTS-0015]     Created 3164 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:2, 3:2, 4:10, 5:11, 6:18, 7:19, 8:39, 9:30, 10:24, 11:23, 12:31, 13:17, 14:22, 15:12, 16:11, 17:17, 18:10, 19:3, 20:7, 21:9, 22:12, 23:7, 24:6, 25:7, 26:7, 27:7, 28:3, 29:7, 30:2682..
+[INFO CTS-0017]     Max level of the clock tree: 8.
+[INFO CTS-0018]     Created 249 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 8.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 9.
+[INFO CTS-0015]     Created 249 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:37, 3:29, 4:33, 5:26, 6:22, 7:16, 8:12, 9:11, 10:9, 11:2, 12:8, 13:2, 14:2, 15:3, 16:2, 17:2, 19:2, 20:2..
+[INFO CTS-0017]     Max level of the clock tree: 4.
+[INFO CTS-0018]     Created 179 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 8.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 9.
+[INFO CTS-0015]     Created 179 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:40, 3:34, 4:25, 5:15, 6:4, 7:5, 8:6, 9:7, 10:3, 11:7, 12:1, 13:2, 14:1..
+[INFO CTS-0017]     Max level of the clock tree: 4.
+[INFO CTS-0098] Clock net "auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock"
+[INFO CTS-0099]  Sinks 249
+[INFO CTS-0100]  Leaf buffers 62
+[INFO CTS-0101]  Average sink wire length 3476.90 um
+[INFO CTS-0102]  Path depth 6 - 7
+[INFO CTS-0207]  Leaf load cells 2805
+[INFO CTS-0098] Clock net "auto_chipyard_prcictrl_domain_reset_setter_clock_in_member_allClocks_uncore_clock_regs"
+[INFO CTS-0099]  Sinks 85026
+[INFO CTS-0100]  Leaf buffers 2799
+[INFO CTS-0101]  Average sink wire length 3832.89 um
+[INFO CTS-0102]  Path depth 10 - 11
+[INFO CTS-0207]  Leaf load cells 2805
+[INFO CTS-0098] Clock net "debug_clock"
+[INFO CTS-0099]  Sinks 1305
+[INFO CTS-0100]  Leaf buffers 204
+[INFO CTS-0101]  Average sink wire length 5286.24 um
+[INFO CTS-0102]  Path depth 8 - 9
+[INFO CTS-0207]  Leaf load cells 2805
+[INFO CTS-0098] Clock net "serial_tl_0_clock_in"
+[INFO CTS-0099]  Sinks 676
+[INFO CTS-0100]  Leaf buffers 134
+[INFO CTS-0101]  Average sink wire length 5420.30 um
+[INFO CTS-0102]  Path depth 8 - 9
+[INFO CTS-0207]  Leaf load cells 2805
+[WARNING CTS-0002] No paths found for pin RocketTile_3/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_9/clk.
+[WARNING CTS-0002] No paths found for pin RocketTile_2/frontend_icache_rockettile_icache_data_arrays_0_rockettile_icache_data_arrays_0_ext_mem_0_4/clk.
+[WARNING CTS-0002] No paths found for pin RocketTile_2/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_10/clk.
+[WARNING CTS-0002] No paths found for pin RocketTile_1/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_7/clk.
+[WARNING CTS-0002] No paths found for pin RocketTile_1/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_4/clk.
+[WARNING CTS-0002] No paths found for pin RocketTile_1/dcache_rockettile_dcache_tag_array_rockettile_dcache_tag_array_ext_mem_0_3/clk.
+[WARNING CTS-0002] No paths found for pin RocketTile_0/frontend_icache_rockettile_icache_data_arrays_1_rockettile_icache_data_arrays_0_ext_mem_0_2/clk.
+[WARNING CTS-0002] No paths found for pin RocketTile_0/dcache_data_rockettile_dcache_data_arrays_0_rockettile_dcache_data_arrays_0_ext_mem_0_11/clk.
+[INFO RSZ-0058] Using max wire length 693um.
+[INFO RSZ-0047] Found 325 long wires.
+[INFO RSZ-0048] Inserted 541 buffers in 325 nets.
+Placement Analysis
+---------------------------------
+total displacement    1214226.5 u
+average displacement        2.7 u
+max displacement          820.2 u
+original HPWL        94094492.0 u
+legalized HPWL       94062042.9 u
+delta HPWL                    0 %
+
+[INFO RSZ-0094] Found 28437 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 28437 out of 28437 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+--------------------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |      471 |      0 |     0 |    +0.0% |  -18.205 |  -261523.2 |  28437 | coh_wrapper_l2_inclusive_cache_bank_sched/mshrs_5_w_grantlast_reg/D
+    1800* |       0 |     874 |     1503 |      0 |   323 |    +0.0% |  -16.060 |  -219725.0 |  28235 | clint_domain_clint_time_0_reg\[27\]/D
+    final |       0 |    1052 |     1503 |      0 |   323 |    +0.0% |  -16.060 |  -207507.0 |  28235 | clint_domain_clint_time_0_reg\[27\]/D
+--------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0045] Inserted 508 buffers, 1 to split loads.
+[INFO RSZ-0041] Resized 1052 instances.
+[INFO RSZ-0043] Swapped pins on 323 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0046] Found 1625 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       2 |       0 |            0 |    +0.0% |  -0.285 | -162.242 | RocketTile_3/frontend_icache_s2_dout_4_reg\[27\]/D
+    final |      33 |    6127 |            0 |    +0.1% |  -0.094 |  -0.348 | coh_wrapper_l2_inclusive_cache_bank_sched/sourceC_queue_ram_ext_Memory_reg\[2\]\[9\]/D
+--------------------------------------------------------------------------------------
+[WARNING RSZ-0066] Unable to repair all hold violations.
+[INFO RSZ-0032] Inserted 6127 hold buffers.
+Placement Analysis
+---------------------------------
+total displacement    1081109.0 u
+average displacement        2.4 u
+max displacement          531.3 u
+original HPWL        94277777.2 u
+legalized HPWL       95533507.7 u
+delta HPWL                    1 %
+

@@ -1,0 +1,25 @@
+#+TITLE: wk_systems
+#+DESC:  Example for the implementation of large IC systems
+
+
+Examples for generating examples for the implementation of large IC systems
+
+   
+ =./do_chipyard= : Dir to generate the RTL using Chipyard
+
+ =./do_genram= : Dir to generate fake memories
+
+ =./do_synth= : Dir to do the synthesis (example 
+
+
+
+An example of RTL code (system verilog) for RocketConfig can be found here: 
+ =./do_chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.RocketConfig/gen-collateral/= 
+
+An example of synthesis netlist in nangate45 for RocketConfig
+(TilePRCIDomain) can be found in =/do_synth/results/TilePRCIDomain.v=
+
+
+Another example of RTL code for DualRocket (DigitalTop) can be found here: 
+ =./do_chipyard/do_mysystems_netlist/generated-src/chipyard.harness.TestHarness.chipyard.DualRocketConfig/gen-collateral/= 
+ 

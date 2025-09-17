@@ -1,0 +1,7 @@
+
+# Do not track the dirs of do_chipyard/do_mysystems_netlist unless manualy added
+do_chipyard/do_mysystems_netlist/*/
+
+# Do not track irrelevant part genus
+do_synth/genus.*
+

@@ -1,0 +1,243 @@
+OpenROAD v2.0-21011-gbb2a3e831 
+Features included (+) or not (-): +GPU +GUI +Python : Debug
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 12 thread(s).
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_tech.lef, created 31 layers, 48 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_bottom_tier already seen in nangate_tech
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef, created 135 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier_shrinked.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_top_tier_shrinked already seen in nangate_tech
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier_shrinked.lef, created 135 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0128] Design: RocketTile_1
+[INFO ODB-0097] 		Created 100000 Nets
+[INFO ODB-0130]     Created 379 pins.
+[INFO ODB-0131]     Created 89949 components and 568795 component-terminals.
+[INFO ODB-0133]     Created 109677 nets and 388897 connections.
+[WARNING STA-0347] current_design for other than top cell not supported.
+[WARNING STA-0440] set_output_delay not allowed on input port 'clock'.
+[WARNING STA-0440] set_output_delay not allowed on input port 'reset'.
+[INFO GPL-0153] Revert-to-snapshot on divergence detection is disabled.
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: (  0.190  1.400 ) um
+[INFO GPL-0004] CoreBBox: (  0.000  0.000 ) ( 717.820 1229.200 ) um
+[INFO GPL-0006] Number of instances:             89949
+[INFO GPL-0007] Movable instances:               89905
+[INFO GPL-0008] Fixed instances:                    44
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                 109677
+[INFO GPL-0011] Number of pins:                 389276
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 718.000 1230.000 ) um
+[INFO GPL-0013] Core BBox: (  0.000  0.000 ) ( 717.820 1229.200 ) um
+[INFO GPL-0016] Core area:                  882344.344 um^2
+[INFO GPL-0017] Fixed instances area:           23.408 um^2
+[INFO GPL-0018] Movable instances area:     275683.730 um^2
+[INFO GPL-0019] Utilization:                    31.245 %
+[INFO GPL-0020] Standard cells area:        275683.730 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[InitialPlace]  Iter: 1 conjugate gradient residual: 0.00058331 HPWL: 4286480950
+[InitialPlace]  Iter: 2 conjugate gradient residual: 0.00089130 HPWL: 3440696351
+[InitialPlace]  Iter: 3 conjugate gradient residual: 0.00077692 HPWL: 3363944822
+[InitialPlace]  Iter: 4 conjugate gradient residual: 0.00072192 HPWL: 3148728837
+[InitialPlace]  Iter: 5 conjugate gradient residual: 0.00035147 HPWL: 2987391090
+[InitialPlace]  Iter: 6 conjugate gradient residual: 0.00018184 HPWL: 2936225766
+[InitialPlace]  Iter: 7 conjugate gradient residual: 0.00009216 HPWL: 2884306430
+[InitialPlace]  Iter: 8 conjugate gradient residual: 0.00007304 HPWL: 2844131137
+[InitialPlace]  Iter: 9 conjugate gradient residual: 0.00006006 HPWL: 2807583837
+[InitialPlace]  Iter: 10 conjugate gradient residual: 0.00005270 HPWL: 2774791626
+[InitialPlace]  Iter: 11 conjugate gradient residual: 0.00004429 HPWL: 2747440069
+[InitialPlace]  Iter: 12 conjugate gradient residual: 0.00003972 HPWL: 2729214481
+[InitialPlace]  Iter: 13 conjugate gradient residual: 0.00003558 HPWL: 2716559547
+[InitialPlace]  Iter: 14 conjugate gradient residual: 0.00003210 HPWL: 2711357290
+[InitialPlace]  Iter: 15 conjugate gradient residual: 0.00003711 HPWL: 2710875999
+[InitialPlace]  Iter: 16 conjugate gradient residual: 0.00003149 HPWL: 2714861385
+[InitialPlace]  Iter: 17 conjugate gradient residual: 0.00002853 HPWL: 2716718142
+[InitialPlace]  Iter: 18 conjugate gradient residual: 0.00002277 HPWL: 2719171720
+[InitialPlace]  Iter: 19 conjugate gradient residual: 0.00002327 HPWL: 2719493948
+[InitialPlace]  Iter: 20 conjugate gradient residual: 0.00002090 HPWL: 2720424017
+[INFO GPL-0023] Placement target density:       0.7000
+[INFO GPL-0024] Movable insts average area:      3.066 um^2
+[INFO GPL-0025] Ideal bin area:                  4.381 um^2
+[INFO GPL-0026] Ideal bin count:                201422
+[INFO GPL-0027] Total bin area:             882344.344 um^2
+[INFO GPL-0028] Bin count (X, Y):         256 ,    256
+[INFO GPL-0029] Bin size (W * H):       2.804 *  4.802 um
+[INFO GPL-0030] Number of bins:                  65536
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        1 |   0.9713 |  2.362655e+09 |   +0.00% |  2.86e-16 |      
+       10 |   0.9517 |  2.558590e+09 |   +8.29% |  4.31e-16 |      
+       20 |   0.9437 |  2.575662e+09 |   +0.67% |  7.00e-16 |      
+       30 |   0.9404 |  2.591311e+09 |   +0.61% |  1.14e-15 |      
+       40 |   0.9381 |  2.607747e+09 |   +0.63% |  1.85e-15 |      
+       50 |   0.9367 |  2.623840e+09 |   +0.62% |  3.01e-15 |      
+       60 |   0.9353 |  2.636583e+09 |   +0.49% |  4.89e-15 |      
+       70 |   0.9340 |  2.645431e+09 |   +0.34% |  7.96e-15 |      
+       80 |   0.9330 |  2.652900e+09 |   +0.28% |  1.30e-14 |      
+       90 |   0.9319 |  2.659621e+09 |   +0.25% |  2.11e-14 |      
+      100 |   0.9309 |  2.666691e+09 |   +0.27% |  3.43e-14 |      
+      110 |   0.9297 |  2.674427e+09 |   +0.29% |  5.59e-14 |      
+      120 |   0.9288 |  2.682610e+09 |   +0.31% |  9.10e-14 |      
+      130 |   0.9282 |  2.692029e+09 |   +0.35% |  1.48e-13 |      
+      140 |   0.9274 |  2.703604e+09 |   +0.43% |  2.41e-13 |      
+      150 |   0.9266 |  2.719600e+09 |   +0.59% |  3.92e-13 |      
+      160 |   0.9252 |  2.742027e+09 |   +0.82% |  6.36e-13 |      
+      170 |   0.9234 |  2.773840e+09 |   +1.16% |  1.03e-12 |      
+      180 |   0.9202 |  2.820745e+09 |   +1.69% |  1.67e-12 |      
+      190 |   0.9154 |  2.887208e+09 |   +2.36% |  2.71e-12 |      
+      200 |   0.9076 |  2.980308e+09 |   +3.22% |  4.37e-12 |      
+      210 |   0.8953 |  3.132249e+09 |   +5.10% |  7.00e-12 |      
+      220 |   0.8804 |  3.286297e+09 |   +4.92% |  1.12e-11 |      
+      230 |   0.8624 |  3.431968e+09 |   +4.43% |  1.80e-11 |      
+      240 |   0.8424 |  3.562745e+09 |   +3.81% |  2.89e-11 |      
+      250 |   0.8197 |  3.720210e+09 |   +4.42% |  4.62e-11 |      
+      260 |   0.7952 |  3.937826e+09 |   +5.85% |  7.36e-11 |      
+[INFO GPL-0100] Timing-driven iteration 1/5, virtual: true.
+[INFO GPL-0101]    Iter: 264, overflow: 0.785, keep resizer changes at: 0.3, HPWL: 4033465445
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109660
+    final |     +5.8% |   19532 |     827 |           707 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 270 slew violations.
+[INFO RSZ-0036] Found 193 capacitance violations.
+[INFO RSZ-0037] Found 374 long wires.
+[INFO RSZ-0039] Resized 19532 instances.
+[INFO RSZ-0038] Inserted 827 buffers in 707 nets.
+[INFO GPL-0106] Timing-driven: worst slack -7.79e-10
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      270 |   0.7744 |  4.142316e+09 |   +5.19% |  1.16e-10 |      
+      280 |   0.7529 |  4.304352e+09 |   +3.91% |  1.85e-10 |      
+      290 |   0.7226 |  4.469467e+09 |   +3.84% |  2.95e-10 |      
+      300 |   0.6859 |  4.596585e+09 |   +2.84% |  4.72e-10 |      
+      310 |   0.6517 |  4.659451e+09 |   +1.37% |  7.59e-10 |      
+[INFO GPL-0100] Timing-driven iteration 2/5, virtual: true.
+[INFO GPL-0101]    Iter: 315, overflow: 0.634, keep resizer changes at: 0.3, HPWL: 4685780131
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109660
+    final |     +6.5% |   22100 |     930 |           823 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 310 slew violations.
+[INFO RSZ-0036] Found 253 capacitance violations.
+[INFO RSZ-0037] Found 400 long wires.
+[INFO RSZ-0039] Resized 22100 instances.
+[INFO RSZ-0038] Inserted 930 buffers in 823 nets.
+[INFO GPL-0106] Timing-driven: worst slack -8.99e-10
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      320 |   0.6155 |  4.762311e+09 |   +2.21% |  1.22e-09 |      
+      330 |   0.5726 |  4.885042e+09 |   +2.58% |  1.96e-09 |      
+      340 |   0.5287 |  4.960560e+09 |   +1.55% |  3.16e-09 |      
+      350 |   0.4846 |  5.042608e+09 |   +1.65% |  5.09e-09 |      
+      360 |   0.4405 |  5.125172e+09 |   +1.64% |  8.22e-09 |      
+      370 |   0.3961 |  5.200278e+09 |   +1.47% |  1.33e-08 |      
+      380 |   0.3502 |  5.227981e+09 |   +0.53% |  2.15e-08 |      
+      390 |   0.3124 |  5.274923e+09 |   +0.90% |  3.22e-08 |      
+[INFO GPL-0100] Timing-driven iteration 3/5, virtual: false.
+[INFO GPL-0101]    Iter: 399, overflow: 0.284, keep resizer changes at: 0.3, HPWL: 5313222065
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109660
+    final |     +6.9% |   21725 |     957 |           865 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 323 slew violations.
+[INFO RSZ-0036] Found 266 capacitance violations.
+[INFO RSZ-0037] Found 409 long wires.
+[INFO RSZ-0039] Resized 21725 instances.
+[INFO RSZ-0038] Inserted 957 buffers in 865 nets.
+[INFO GPL-0106] Timing-driven: worst slack -9.68e-10
+[INFO GPL-0107] Timing-driven: repair_design delta area: -8821.358 um^2 (-3.20%)
+[INFO GPL-0108] Timing-driven: repair_design, gpl cells created: 957 (+0.00%)
+[INFO GPL-0109] Timing-driven: inserted buffers as reported by repair_design: 957
+[INFO GPL-0110] Timing-driven: new target density: 0.6900021
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      400 |   0.2742 |  5.224892e+09 |   -0.95% |  4.72e-08 |      
+      410 |   0.2473 |  5.196642e+09 |   -0.54% |  6.90e-08 |      
+      420 |   0.2139 |  5.167341e+09 |   -0.56% |  1.02e-07 |      
+[INFO GPL-0100] Timing-driven iteration 4/5, virtual: false.
+[INFO GPL-0101]    Iter: 424, overflow: 0.204, keep resizer changes at: 0.3, HPWL: 5155780330
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109660
+    final |     +2.2% |   16926 |     100 |           127 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 29 slew violations.
+[INFO RSZ-0036] Found 57 capacitance violations.
+[INFO RSZ-0037] Found 44 long wires.
+[INFO RSZ-0039] Resized 16926 instances.
+[INFO RSZ-0038] Inserted 100 buffers in 127 nets.
+[INFO GPL-0106] Timing-driven: worst slack -9.45e-10
+[INFO GPL-0107] Timing-driven: repair_design delta area: 2283.344 um^2 (+0.86%)
+[INFO GPL-0108] Timing-driven: repair_design, gpl cells created: 100 (+0.00%)
+[INFO GPL-0109] Timing-driven: inserted buffers as reported by repair_design: 100
+[INFO GPL-0110] Timing-driven: new target density: 0.69259
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      430 |   0.1861 |  5.204734e+09 |   +0.72% |  1.49e-07 |      
+      440 |   0.1613 |  5.191663e+09 |   -0.25% |  2.19e-07 |      
+[INFO GPL-0100] Timing-driven iteration 5/5, virtual: false.
+[INFO GPL-0101]    Iter: 447, overflow: 0.144, keep resizer changes at: 0.3, HPWL: 5183343467
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |    109660
+    final |     +0.9% |   14923 |     104 |           128 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 26 slew violations.
+[INFO RSZ-0036] Found 40 capacitance violations.
+[INFO RSZ-0037] Found 65 long wires.
+[INFO RSZ-0039] Resized 14923 instances.
+[INFO RSZ-0038] Inserted 104 buffers in 128 nets.
+[INFO GPL-0106] Timing-driven: worst slack -8.77e-10
+[INFO GPL-0107] Timing-driven: repair_design delta area: 1062.404 um^2 (+0.40%)
+[INFO GPL-0108] Timing-driven: repair_design, gpl cells created: 104 (+0.00%)
+[INFO GPL-0109] Timing-driven: inserted buffers as reported by repair_design: 104
+[INFO GPL-0110] Timing-driven: new target density: 0.6937941
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      450 |   0.1364 |  5.240779e+09 |   +0.95% |  3.21e-07 |      
+      460 |   0.1160 |  5.218459e+09 |   -0.43% |  4.73e-07 |      
+[INFO GPL-1001] Finished with Overflow: 0.099275
+[INFO GPL-1002] Placed Cell Area            268972.8160
+[INFO GPL-1003] Available Free Area         882320.9360
+[INFO GPL-1004] Minimum Feasible Density        0.3048 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.3387
+[INFO GPL-1008]     - For 80% usage of free space: 0.3811
+Found 44 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0067] Restrict pins [ auto_buffer_out_a_bits_address[0] auto_buffer_out_a_bits_address[10] auto_buffer_out_a_bits_address[11] auto_buffer_out_a_bits_address[12] auto_buffer_out_a_bits_address[13] ... ] to region 0.00u-718.00u at the TOP edge.
+[INFO PPL-0001] Number of available slots 12533
+[INFO PPL-0002] Number of I/O             379
+[INFO PPL-0003] Number of I/O w/sink      346
+[INFO PPL-0004] Number of I/O w/o sink    33
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 207214.47 um.
+Placement Analysis
+---------------------------------
+total displacement      96147.4 u
+average displacement        1.1 u
+max displacement            5.0 u
+original HPWL         2747157.0 u
+legalized HPWL        2823295.9 u
+delta HPWL                    3 %
+

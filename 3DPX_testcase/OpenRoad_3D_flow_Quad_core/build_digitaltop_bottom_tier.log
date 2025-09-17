@@ -1,0 +1,154 @@
+OpenROAD v2.0-21011-gbb2a3e831 
+Features included (+) or not (-): +GPU +GUI +Python : Debug
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 24 thread(s).
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_tech.lef, created 31 layers, 48 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_bottom_tier already seen in nangate_tech
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_bottom_tier.lef, created 135 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier_shrinked.lef at line 2.
+
+[INFO ODB-0394] Duplicate site FreePDK45_38x28_10R_NP_162NW_34O in nangate_stdcell_top_tier_shrinked already seen in nangate_tech
+[INFO ODB-0227] LEF file: ../do_synth/3D_Nangate45_PDK/nangate_stdcell_top_tier_shrinked.lef, created 135 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_bottom_tier.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_64x32_3D/fakeram45_64x32_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_1024x32_3D/fakeram45_1024x32_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_16384x64_3D/fakeram45_16384x64_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../do_genram/results/fakeram45_8192x64_3D/fakeram45_8192x64_top_tier_shrinked.lef, created 1 library cells
+[INFO ODB-0128] Design: DigitalTop
+[INFO ODB-0094] 		Created 100000 Insts
+[INFO ODB-0094] 		Created 200000 Insts
+[INFO ODB-0094] 		Created 300000 Insts
+[INFO ODB-0094] 		Created 400000 Insts
+[INFO ODB-0097] 		Created 100000 Nets
+[INFO ODB-0097] 		Created 200000 Nets
+[INFO ODB-0097] 		Created 300000 Nets
+[INFO ODB-0097] 		Created 400000 Nets
+[INFO ODB-0097] 		Created 500000 Nets
+[INFO ODB-0130]     Created 409 pins.
+[INFO ODB-0131]     Created 431890 components and 2734870 component-terminals.
+[INFO ODB-0133]     Created 533041 nets and 1870834 connections.
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: (  0.190  1.400 ) um
+[INFO GPL-0004] CoreBBox: ( 20.140 21.000 ) ( 1465.850 2489.200 ) um
+[INFO GPL-0006] Number of instances:            431890
+[INFO GPL-0007] Movable instances:              363077
+[INFO GPL-0008] Fixed instances:                 68813
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                 533034
+[INFO GPL-0011] Number of pins:                1870636
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 1486.000 2510.000 ) um
+[INFO GPL-0013] Core BBox: ( 20.140 21.000 ) ( 1465.850 2489.200 ) um
+[INFO GPL-0016] Core area:                  3568301.422 um^2
+[INFO GPL-0017] Fixed instances area:       2416252.496 um^2
+[INFO GPL-0018] Movable instances area:     791441.504 um^2
+[INFO GPL-0019] Utilization:                    68.699 %
+[INFO GPL-0020] Standard cells area:        791441.504 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0023] Placement target density:       0.7500
+[INFO GPL-0024] Movable insts average area:      2.180 um^2
+[INFO GPL-0025] Ideal bin area:                  2.906 um^2
+[INFO GPL-0026] Ideal bin count:               1227729
+[INFO GPL-0027] Total bin area:             3568301.422 um^2
+[INFO GPL-0028] Bin count (X, Y):        1024 ,   1024
+[INFO GPL-0029] Bin size (W * H):       1.412 *  2.410 um
+[INFO GPL-0030] Number of bins:                1048576
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        1 |   0.7081 |  1.806705e+11 |   +0.00% |  8.13e-14 |      
+       10 |   0.8159 |  1.790642e+11 |   -0.89% |  1.26e-13 |      
+       20 |   0.8828 |  1.774084e+11 |   -0.92% |  2.05e-13 |      
+       30 |   0.9117 |  1.761430e+11 |   -0.71% |  3.33e-13 |      
+       40 |   0.9252 |  1.750682e+11 |   -0.61% |  5.43e-13 |      
+       50 |   0.9333 |  1.741032e+11 |   -0.55% |  8.84e-13 |      
+       60 |   0.9425 |  1.732041e+11 |   -0.52% |  1.44e-12 |      
+       70 |   0.9518 |  1.723630e+11 |   -0.49% |  2.35e-12 |      
+       80 |   0.9585 |  1.716990e+11 |   -0.39% |  3.82e-12 |      
+       90 |   0.9613 |  1.712453e+11 |   -0.26% |  6.22e-12 |      
+      100 |   0.9600 |  1.710907e+11 |   -0.09% |  1.01e-11 |      
+      110 |   0.9532 |  1.712564e+11 |   +0.10% |  1.63e-11 |      
+      120 |   0.9389 |  1.717022e+11 |   +0.26% |  2.53e-11 |      
+      130 |   0.9167 |  1.723719e+11 |   +0.39% |  3.84e-11 |      
+      140 |   0.8841 |  1.731517e+11 |   +0.45% |  5.75e-11 |      
+      150 |   0.8524 |  1.738721e+11 |   +0.42% |  8.64e-11 |      
+      160 |   0.8241 |  1.744712e+11 |   +0.34% |  1.32e-10 |      
+      170 |   0.7917 |  1.750817e+11 |   +0.35% |  2.01e-10 |      
+      180 |   0.7574 |  1.759371e+11 |   +0.49% |  2.99e-10 |      
+      190 |   0.7258 |  1.767748e+11 |   +0.48% |  4.42e-10 |      
+      200 |   0.7014 |  1.773956e+11 |   +0.35% |  6.73e-10 |      
+      210 |   0.6703 |  1.781127e+11 |   +0.40% |  1.02e-09 |      
+      220 |   0.6374 |  1.791095e+11 |   +0.56% |  1.48e-09 |      
+      230 |   0.6005 |  1.799390e+11 |   +0.46% |  2.20e-09 |      
+[INFO GPL-0088] Routability snapshot saved at iter = 230
+      240 |   0.5576 |  1.803955e+11 |   +0.25% |  3.41e-09 |      
+      250 |   0.5163 |  1.810135e+11 |   +0.34% |  5.21e-09 |      
+      260 |   0.4739 |  1.816526e+11 |   +0.35% |  7.90e-09 |      
+      270 |   0.4300 |  1.820018e+11 |   +0.19% |  1.22e-08 |      
+      280 |   0.3842 |  1.821166e+11 |   +0.06% |  1.93e-08 |      
+      290 |   0.3432 |  1.820648e+11 |   -0.03% |  3.13e-08 |      
+      300 |   0.3123 |  1.819749e+11 |   -0.05% |  4.60e-08 |      
+[INFO GPL-0040] Routability iteration: 1
+[INFO GPL-0041] Total routing overflow: 143111.2266
+[INFO GPL-0042] Number of overflowed tiles: 441764 (52.29%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 1.7893
+[INFO GPL-0044] Average top 1.0% routing congestion: 1.7675
+[INFO GPL-0045] Average top 2.0% routing congestion: 1.7373
+[INFO GPL-0046] Average top 5.0% routing congestion: 1.6809
+[INFO GPL-0047] Routability iteration weighted routing congestion: 1.7784
+[INFO GPL-0048] Routing congestion (1.7784) lower than previous minimum (1e+30). Updating minimum.
+[INFO GPL-0051] Inflated area:              462733.938 um^2 (+58.47%)
+[INFO GPL-0052] Placement target density:       0.7500
+[INFO GPL-0053] Target density 1.1517 exceeds the maximum allowed 0.9900.
+[INFO GPL-0055] Reverting inflation values and target density from the iteration with minimum observed routing congestion.
+[INFO GPL-0056] Minimum observed routing congestion: 1.7784
+[INFO GPL-0057] Target density at minimum routing congestion: 0.7500
+[INFO GPL-0089] Routability end iteration: revert back to snapshot
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      310 |   0.5745 |  1.802212e+11 |   -0.96% |  2.76e-09 |      
+      320 |   0.5413 |  1.805812e+11 |   +0.20% |  3.96e-09 |      
+      330 |   0.5076 |  1.810509e+11 |   +0.26% |  5.59e-09 |      
+      340 |   0.4708 |  1.816297e+11 |   +0.32% |  7.83e-09 |      
+      350 |   0.4350 |  1.813989e+11 |   -0.13% |  1.14e-08 |      
+      360 |   0.4002 |  1.815859e+11 |   +0.10% |  1.66e-08 |      
+      370 |   0.3673 |  1.814749e+11 |   -0.06% |  2.44e-08 |      
+      380 |   0.3376 |  1.813350e+11 |   -0.08% |  3.59e-08 |      
+      390 |   0.3053 |  1.812031e+11 |   -0.07% |  5.29e-08 |      
+      400 |   0.2745 |  1.812111e+11 |   +0.00% |  7.78e-08 |      
+      410 |   0.2559 |  1.805131e+11 |   -0.39% |  1.15e-07 |      
+      420 |   0.2291 |  1.807742e+11 |   +0.14% |  1.65e-07 |      
+      430 |   0.2045 |  1.810783e+11 |   +0.17% |  2.37e-07 |      
+      440 |   0.1818 |  1.813691e+11 |   +0.16% |  3.41e-07 |      
+      450 |   0.1624 |  1.816504e+11 |   +0.16% |  4.90e-07 |      
+      460 |   0.1449 |  1.819182e+11 |   +0.15% |  7.05e-07 |      
+      470 |   0.1304 |  1.821657e+11 |   +0.14% |  1.02e-06 |      
+      480 |   0.1173 |  1.823701e+11 |   +0.11% |  1.47e-06 |      
+      490 |   0.1075 |  1.825569e+11 |   +0.10% |  2.13e-06 |      
+      500 |   0.0999 |  1.827508e+11 |   +0.11% |  3.08e-06 |      
+[INFO GPL-1001] Finished with Overflow: 0.099923
+[INFO GPL-1002] Placed Cell Area            791441.5040
+[INFO GPL-1003] Available Free Area         1152048.9260
+[INFO GPL-1004] Minimum Feasible Density        0.6900 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.7633
+[INFO GPL-1008]     - For 80% usage of free space: 0.8587
+[INFO GPL-1009]     - For 50% usage of free space: 1.3740
+Placement Analysis
+---------------------------------
+total displacement     453356.1 u
+average displacement        1.0 u
+max displacement          425.7 u
+original HPWL        91378986.5 u
+legalized HPWL       91712410.9 u
+delta HPWL                    0 %
+

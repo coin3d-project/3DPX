@@ -1,0 +1,15 @@
+(RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   NONE   1.375
+(RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   RocketTile_0   3
+(RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   RocketTile_1   2.25
+(RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   RocketTile_3   6.625
+(RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   bank||coh_wrapper_l2_ctrls||coh_wrapper_l2_inclusive_cache_bank_sched||uartClockDomainWrapper_uart_0_rxm   485.062
+(RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   cbus_wrapped_error_device_error   4
+(RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   (root)_glue_logic   2602.75
+RocketTile_2/fpuOpt/dfma_fma   (RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   2
+RocketTile_2/fpuOpt/fpiu||RocketTile_2/fpuOpt/ifpu   (RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   653
+(RocketTile_2/fpuOpt)_glue_logic||RocketTile_2/fpuOpt/fpmu||RocketTile_2/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_2/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   NONE   0.625
+(RocketTile_2/fpuOpt)_glue_logic||RocketTile_2/fpuOpt/fpmu||RocketTile_2/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_2/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   RocketTile_3   1
+(RocketTile_2/fpuOpt)_glue_logic||RocketTile_2/fpuOpt/fpmu||RocketTile_2/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_2/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   bank||coh_wrapper_l2_ctrls||coh_wrapper_l2_inclusive_cache_bank_sched||uartClockDomainWrapper_uart_0_rxm   7.5625
+(RocketTile_2/fpuOpt)_glue_logic||RocketTile_2/fpuOpt/fpmu||RocketTile_2/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_2/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   (RocketTile_2)_glue_logic||RocketTile_2/dcache_amoalus_0   672.75
+(RocketTile_2/fpuOpt)_glue_logic||RocketTile_2/fpuOpt/fpmu||RocketTile_2/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_2/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   RocketTile_2/fpuOpt/dfma_fma   599
+(RocketTile_2/fpuOpt)_glue_logic||RocketTile_2/fpuOpt/fpmu||RocketTile_2/fpuOpt/hfma_fma_mulAddRecFNToRaw_postMul||RocketTile_2/fpuOpt/sfma_fma_mulAddRecFNToRaw_postMul   RocketTile_2/fpuOpt/fpiu||RocketTile_2/fpuOpt/ifpu   579

@@ -1,0 +1,12 @@
+RocketTile_0   1063.05   0   1204.79   907.278
+RocketTile_1   0   0   470.251   2340.85
+RocketTile_2   0   2340.85   1070.23   1059.75
+RocketTile_3   470.251   0   592.801   1844.23
+bank||coh_wrapper_l2_ctrls||coh_wrapper_l2_inclusive_cache_bank_sched||uartClockDomainWrapper_uart_0_rxm   1070.23   907.278   1197.61   2493.32
+cbus_wrapped_error_device_error   470.251   1844.23   0.0008   0.0008
+serial_tl_domain_phy_in_phits_in_async_4_sink   0.0008   2325.45   0.0008   0.0008
+serial_tl_domain_phy_in_phits_in_async_4_source   0   2325.45   0.0008   0.0008
+serial_tl_domain_phy_out_phits_out_async_1_sink   470.251   1844.23   0.0008   0.0008
+serial_tl_domain_phy_out_phits_out_async_1_source   470.251   1844.23   0.0008   0.0008
+(root)_glue_logic   470.251   1844.23   599.977   496.622
+NONE   -20.14   -21   2308.02   3442.04
